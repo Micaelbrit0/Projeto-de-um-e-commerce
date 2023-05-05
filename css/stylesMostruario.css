@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 1;
+}
+   
+   
+body{
+
+    background-color: rgba(236, 228, 228, 1);
+}
+
+main{
+ display: flex;
+ flex: 6;
+ padding: 30px;
+ display: flex;
+ min-width: 100vh;
+ gap:50px;
+ flex-wrap: wrap;
+
+
+}
+
+#mostruario{
+    display: flex;
+    min-height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+#categoria{
+    flex: 3.5;    
+}
+
+#vazio{
+    height: 100px;
+}
+
+#BoxCategoria, #BoxPreço{
+    width: 180px;
+    height:50px;
+    background: #FD9E0F;
+    border-radius: 11px;
+    text-align: center;
+    color: white;
+}
+
+#produtos{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#produtosMostruario{
+    display: flex;
+    justify-content: space;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#BoxNomeProduto{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    text-align: left;
+    border-radius: 58px;
+    
+}
+.produto{
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: wheat;
+}
+
+ul{
+    list-style: none;
+    padding: 20px;
+}
+
+li{
+    margin: 10px 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  outline: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: white;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FD9E0F;
+    border-color: #FD9E0F;
+  }
+  
+  label {
+    margin-left: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+  }

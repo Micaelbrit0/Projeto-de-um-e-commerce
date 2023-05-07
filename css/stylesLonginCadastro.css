@@ -5,21 +5,46 @@
    
    
 body{
-
     background-color: rgba(236, 228, 228, 1);
+
 
 }
 
-#corLaranja{
-    position: absolute;
+#menu{
     width: 100%;
-    height: 518px;
-    background: #FD9E0F;
-    top: 50px;
+    height: 100px;
+    background-color: #252525;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+
+img{
+    width: 150px;
+   
 }
 
 #vazio{
+    height: 50px;;
+}
+
+#vaziobutton{
     height: 100px;
+}
+
+#corLaranja{
+    margin: 100px 0 50px 0;
+    width: 250vh;
+    height: 300px;
+    background: #FD9E0F;
+    position: fixed;
+    z-index: -1;
+    bottom: 50px;
+    top:5px;
+    margin: 200px;
+    margin-top: 250px;
 
 }
 
@@ -28,23 +53,18 @@ body{
     justify-content: center;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
 
-}
-
-.area-login{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 
 .login{
     background: #FFFFFF;
     border-radius: 41px;    
     Width:400px;
-    Height:470px;
+    Height:800px;
     padding: 50px;
-    float: right;
+    top: 20px;
+    
 }
 
 

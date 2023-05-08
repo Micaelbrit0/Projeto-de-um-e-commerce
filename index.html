@@ -7,14 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoinha Store</title>
     <link href="">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/stylesTelaInicial.css">
 
 
 </head>
 
 <body>
     <header>
-        <nav>
+        <img src="imagens/logo.png" alt="Logo lagoinha store">
+        <div id="Buscador"><!--Div com um input para o buscador da pagina #Micael#-->
+            
+        <input type="text" id="txtBuscador" placeholder="Buscar no site..." /><button><img id="lupa" src="imagens/lupa.png" alt=""></button>
+        </div> 
+
+        <a href=""><img id="carrinho" src="imagens/carrinho.png" alt=""></a>
+        
+        <nav id="cadastro_entrar"><!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
+            <ul>
+                <li><a id="cor" href="">Cadastro </a></li>
+                <li> | </li>
+                <li><a id="cor" href=""> Entrar</a></li>
+            </ul>
+
+        </nav>
+        
+        <nav><!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
             <ul>
                 <li><a href="">Bíblias</a></li>
                 <li><a href="">Acessórios</a></li>
@@ -22,15 +39,8 @@
                 <li><a href="">Camisas</a></li>
                 <li><a href="">Livros</a></li>
             </ul>
-
-            <ul>
-                <li><a href="">Cadastro</a></li>
-                <li><a href="">Entrar</a></li>
-            </ul>
-
-            <hr>
-    
         </nav>
+        
 
     </header>
 
@@ -39,7 +49,7 @@
         <div id="painel">
             <div id="carrossel"></div>
         </div>
-        <div id="categorias"> 
+        <div id="categorias">
             <ul>
                 <li><a href="">Bíblias</a></li>
                 <li><a href="">Acessórios</a></li>
@@ -51,13 +61,13 @@
         <div id="destaques">
 
         </div>
-       
+
     </main>
 
     <footer><!--Rodaper-->
-    <hr>  
-     <div id="rodape">
-     </div>
+
+        <div id="rodape"><img id="instagran" src="imagens/instagran.jpeg" alt="icone istagran">
+        </div>
 
     </footer>
 

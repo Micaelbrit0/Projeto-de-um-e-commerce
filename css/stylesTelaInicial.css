@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+header{
+    width: 1309px;
+    height: 185px;
+    background: rgb(36, 36, 36);
+    font-family: 'Graduate';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+
+#Buscador{
+   padding: 5px;
+    margin: 30px;
+    margin-left: 80px;
+    width: 533px;
+    height: 30px;
+    border:solid 2px;
+    background: #D9D9D9; 
+}
+
+#txtBuscador{   
+    float:left;
+    background-color:transparent;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;  
+}
+
+button{
+   margin-left: 250px;
+   background-color: #D9D9D9;
+   border-radius:0 7px 7px 0;
+   border:none;
+}
+
+img{
+    padding-left: 50px;
+    width:10rem;
+    height: 7rem;
+}
+
+#lupa{
+    width: 2rem;
+    height: 2rem; 
+}
+
+#instagran{
+    width: 3rem;
+    height: 3rem; 
+}
+
+#carrinho{
+    width: 3rem;
+    height: 3rem;
+    padding: 25px;
+    padding-right: 30px;
+}
+
+#cadastro_entrar { 
+    color: #FFFFFF;
+    padding-left: 640px;
+    margin-top: -90px;   
+}
+
+a{
+    color:#FD9E0F ;
+    text-decoration: none;
+}
+
+#cor{
+    color: #FFFFFF;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    list-style: none;
+    font-weight: 400;
+    font-size: 25px;
+    justify-content: center;
+    padding-left: 330px;     
+}
+
+header li {
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+}

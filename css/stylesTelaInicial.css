@@ -122,8 +122,10 @@ footer{
   
 .titulo{
     color:rgba(182, 182, 182, 0.815); 
+    text-decoration: none; 
 }
 
 .redesocial{
     color: white; 
+    text-decoration: none; 
 }

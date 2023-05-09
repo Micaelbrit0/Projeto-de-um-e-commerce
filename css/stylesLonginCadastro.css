@@ -1,23 +1,24 @@
-*   
-    {margin: 0;
+*{margin: 0;
     padding: 0;
 }
    
    
 body{
     background-color: rgba(236, 228, 228, 1);
+    box-sizing: border-box;
 
 
 }
 
 #menu{
-    width: 100%;
+    width: 350hv;
     height: 100px;
     background-color: #252525;
     top: 0px;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+    flex-wrap: wrap;
     
 }
 
@@ -27,7 +28,7 @@ img{
 }
 
 #vazio{
-    height: 50px;;
+    height: 50px;
 }
 
 #vaziobutton{
@@ -65,17 +66,12 @@ img{
     padding: 50px;
     top: 20px;
     
+    
 }
 
 
-.login form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 
-}
-
-.login input{
+input{
     margin-top: 20px ;
     border-radius: 8px;
     display: flex;
@@ -83,17 +79,24 @@ img{
 
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
 form [type="submit"]{
-display: block;
-height: 50px;
-background: #FD9E0F;
-box-shadow: 0px 4px 4px rgba(0,0, 0, 0.25);
-border-radius: 23px;
-font-family: 'Graduate', cursive;
-font-size: 20px;
-color: white;
-font-weight: bolder;
-cursor: pointer;
+    display: block;
+    height: 50px;
+    background: #FD9E0F;
+    box-shadow: 0px 4px 4px rgba(0,0, 0, 0.25);
+    border-radius: 23px;
+    font-family: 'Graduate', cursive;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 h1{
@@ -126,3 +129,92 @@ input{
 #espaco{
     padding-right: 137px
 }
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#LoginCadastro{
+    background: #FFFFFF;
+    border-radius: 41px;    
+    Width:400px;
+    Height:400px;
+    padding: 50px;
+    top: 20px;
+    flex-direction: column;
+    margin: 100px 300px 100px 0;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+
+#corLaranjaLongin{
+    margin: 100px 0 50px 0;
+    width: 100vw;
+    height: 430px;
+    background: #FD9E0F;
+    position: fixed;
+    z-index: -1;
+    top:5px;
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+
+}
+
+#corLaranjaLongin img{
+    width: 600px;
+    margin: 200px;
+
+}
+
+/* CSS DO RODAPE */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#rodape{
+  display: flex;
+  justify-content: space-between;
+  width:100%;                                                                                                            
+  font-size: 13px;
+  font-family: 'Graduate', cursive;
+}
+
+.conteudo{
+  width: 250px;
+  padding: 10px;
+  
+}
+
+  
+.titulo{
+    color:rgba(182, 182, 182, 0.815); 
+    text-decoration: none;
+}
+
+.redesocial{
+    color: white; 
+    text-decoration: none;
+
+}
+
+
+

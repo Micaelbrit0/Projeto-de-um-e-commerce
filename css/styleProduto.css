@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    height: 100px;
+}
+
+body {
+    background: #D9D9D9;
+
+}
+
+/* Coloquei os elementos em coluna*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Fica os dois lados do produto(imagem e nome do produto) na deireção de linha*/
+#container{
+    width: 700px;
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 41px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+/* Peguei 4 pedaçõs da tela que foi dividida em 6*/
+#lado-esquerdo{
+    flex: 2;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#produtoPrincipal{
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#favoritar{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#nomeFav{
+    font-size: 15px;
+}
+.coracao {
+font-size: 20px; /* tamanho do coração */
+color: gray; /* cor do coração desmarcado */
+cursor: pointer;
+
+}
+  
+input[type="checkbox"] {
+display: none; /* esconde a checkbox padrão */
+}
+  
+input[type="checkbox"]:checked + label {
+color: red; /* cor do coração marcado */
+}
+
+/* Dividir a tela em 6*/
+#lado-direito{
+    flex: 6;
+}
+
+#imagens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+
+
+}
+
+.imagem{
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+}
+/* Quando passar o mouse vai ficar meio braca a imagem*/
+.imagem :hover{
+    background-color: rgba(255, 255, 255, 0.402);
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Graduate';
+}
+
+/* Criei uma lista para fazer as estrelas, o  content: "\2606" faz elas ficarem nessa forma */
+ul{
+    display: flex;
+}
+.checklist {
+    list-style: none;
+    padding: 0;
+    padding-left: 40px;
+    font-size: 25px;
+    color: #D9D9D9;
+ }
+ /* "\2606" para representar uma estrela vazia e "\2605" para uma estrela preenchida. Utilizamos o seletor ::before para adicionar o caractere antes do conteúdo de cada item da lista.*/
+
+ .checklist li::before {
+    content: "\2606"; 
+    margin-right: 5px;
+    
+ }
+ 
+ .checklist li.checked::before {
+    content: "\2605"; 
+    color: #FD9E0F;
+ }
+
+ #preco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #boxPreco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 45px;
+    background-color: #D9D9D9;
+    border-radius: 14px;
+ }
+ p, label{
+    font-size: 20px;
+    font-family: 'Graduate';
+ }
+ #parcelamento{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;  
+    position: relative;
+    z-index: 1
+
+ }
+ details{
+    margin-left: 15px;
+    width: 80px;
+    height: 16px;
+    background-color: #D9D9D9;
+    border-radius: 14px;
+    
+ }
+
+ .precoParcela{
+    background-color: white;
+ }
+
+
+ /*Para remover o ícone em forma de triângulo ao lado do <summary>*/
+summary::-webkit-details-marker {
+    display: none;
+}
+  
+summary{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.precoParcela {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#frete{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+#imgFrete{
+    height:30px;
+    
+}
+
+label{
+    margin-right:20px;
+}
+input[type="text"]{
+    width: 120px;
+    height: 25px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 14px;
+} 
+/* Centraliza o texto do placeholder */
+input[type="text"]::placeholder {
+    text-align: center; 
+}
+
+#quantidade{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+#nomeQuant{
+    margin-right:40px ;
+}
+
+button {
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  
+#increaseBtn, #decreaseBtn, #quantityInput{
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 0px;
+    color: #FD9E0F;
+    font-weight: bold;
+    font-family: 'Graduate';
+}
+#carrinho{
+    padding-left: 10px;
+}
+#increaseBtn, #decreaseBtn{
+    border: none;
+    background-color: #D9D9D9
+}
+#increaseBtn:hover, #decreaseBtn:hover{
+    background-color: #FD9E0F;
+    color: white;
+
+}
+
+#vazio{
+    height: 100px;
+}
+
+#carrinho-compra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+#boxCarrinho{
+    display: flex;
+    border: 2px solid #FD9E0F;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#boxCompra{
+    justify-content: center;
+    border: 2px solid #FD9E0F;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#comprar{
+    text-align: center;
+    padding-top: 5px;
+    
+}
+
+#adicionar, #comprar{
+    font-size: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+#boxCarrinho:hover, #boxCompra:hover{
+    background-color: #FD9E0F;
+    color: white;
+}

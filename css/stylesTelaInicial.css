@@ -1,92 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;  
+/*A qui inicia o css do header*/
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
 header{
-    width: 1309px;
-    height: 185px;
-    background: rgb(36, 36, 36);
-    font-family: 'Graduate';
     display: flex;
+    background-color: #252525;
     flex-direction: row;
+    width: 100vw;
+    justify-content: center;
     flex-wrap: wrap;  
 }
-
-#Buscador{
-   padding: 5px;
-    margin: 30px;
-    margin-left: 80px;
-    width: 533px;
-    height: 30px;
-    border:solid 2px;
-    background: #D9D9D9; 
-}
-
-#txtBuscador{   
-    float:left;
-    background-color:transparent;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width:191px;  
-}
-
-button{
-   margin-left: 250px;
-   background-color: #D9D9D9;
-   border-radius:0 7px 7px 0;
-   border:none;
-}
-
-img{
-    padding-left: 50px;
-    width:10rem;
-    height: 7rem;
-}
-
-#lupa{
-    width: 2rem;
-    height: 2rem; 
-}
-
-
-#carrinho{
-    width: 3rem;
-    height: 3rem;
-    padding: 25px;
-    padding-right: 30px;
-}
-
-#cadastro_entrar { 
-    color: #FFFFFF;
-    padding-left: 640px;
-    margin-top: -90px;   
-}
-
-a{
-    color:#FD9E0F ;
-    text-decoration: none;
-}
-
-#cor{
-    color: #FFFFFF;
-}
-
-header nav ul {
-    display: flex;
-    gap: 30px;
-    flex-direction: row;
+li{
     list-style: none;
-    font-weight: 400;
-    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color:rgba(253, 158, 15, 1)  ;
+}
+.cor{
+    color:#FFFFFF ;
+}
+.hea_superior{ /*div principal do header*/
+    display: flex; 
     justify-content: center;
-    padding-left: 330px;     
+    flex-wrap: wrap;
 }
-
-header li {
+#buscador{
+    height: 30px;
+    padding: 15px;
+    font-family: 'Graduate';   
+}
+#button{
+    height: 2.1rem;
+    padding: 5px;
+    margin-top: 30px;
+    background-color:rgba(253, 158, 15, 1) ;
+    border: none;
+    border-radius: 0px  4px 4px 0px ;
+    font-family: 'Graduate';
+}
+#bus_but{/*div principal do buscador*/
+    display: flex;
+    justify-content: center;
+}
+#carrinho{
+    margin-top: 24px;  
+}
+#cadastro_entrar{ /*div principal de cadastro e login*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    margin-left: 80px;
+    text-decoration: none;
+    font-family: 'Graduate';
+    color: #FFFFFF;
+    font-size: 25px; 
+}
+nav ul li a {
+    font-family: 'Graduate';
+    margin-top: 10px;
+    display: inline-block;
+    justify-content: center;
     padding: 10px;
+    font-size: 25px;
+    text-decoration: none;    
 }
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 40px;  
+} /*A qui termina o css do header*/
 
 /* CSS DO RODAPE     */
 footer{

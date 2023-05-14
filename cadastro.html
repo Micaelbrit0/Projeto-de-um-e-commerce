@@ -25,54 +25,102 @@
             </div>
         </nav>
     </header>
-    <div id="vazio"></div>
+    
 
-    <div id="cadastro">
-        <div id="corLaranja"></div> 
+    <main id="meincadastro">
 
-        <div class="login">
-
-            <h1>Cadastra-se</h1>
-            <br>
-            <form method="post">
+        <div id="container">
+            <div id="formCadastro">
+                <h1>Cadastra-se</h1>
+                <br>
+                <form method="post">
                 <label>Dados pessoais</label>
 
-                <input type="text" name="Nome" required="required" placeholder="Nome">
+                    <input type="text" name="nomeDeUsuario" required="required" placeholder="Nome de Usuário">
 
-                <input maxlength="11" type="text" name="CPF" required="required" placeholder="CPF">
+                    <input type="text" name="Nome" required="required" placeholder="Nome">
 
-                <input type="date" name="Data de nascimento" required="required" placeholder="Data de nascimento">
-                <br>
-                <label>Login</label>
+                    <div id="generoCPF">
+                        <div id="genero">
+                        <p id="nomeTex">Gênero:</p>
+                        <select id="opcoes">
+                            <option class="precoParcela" value="opcao1">Masculino</option>
+                            <option class="precoParcela" value="opcao2">Feminino</option>
+                            <option class="precoParcela" value="opcao3">Outro</option>
+                                    
+                        </select>
+                        </div>
 
-                <input type="text" name="Email" required="required" placeholder="Email">
+                    <input maxlength="11" type="text" name="CPF" required="required" placeholder="CPF">
+                    </div>
 
-                <input maxlength="8" minlength="0" type="password" name="Senha" required="required" placeholder="Senha">
+                    <input type="number" name="NumeroDeTelefone" required="required" placeholder="Número de Telefone">
 
-                <input maxlength="8" minlength="0" type="password" name="Senha" required="required" placeholder="Confirme a senha">
-                 
+                    <p id="nomeTexDate">Data de Nascimento:</p>
+                    <input type="date" name="Data de nascimento" required="required" placeholder="Data de nascimento">
+                    <br>
+                    <label>Login</label>
+
+                    <input type="text" name="Email" required="required" placeholder="Email">
+
+                    <input maxlength="8" minlength="0" type="password" name="Senha" required="required" placeholder="Senha">
+
+                    <input maxlength="8" minlength="0" type="password" name="Senha" required="required" placeholder="Confirme a senha">
+                        
                 <br>
                 <label>Endereço</label>
 
-                <input type="text" name="Cidade" required="required" placeholder="Cidade">
+                    <input type="text" name="Cidade" required="required" placeholder="Cidade">
 
-                <input type="text" name="Rua" required="required" placeholder="Rua">
+                    <input type="text" name="Rua" required="required" placeholder="Rua">
+                        
+                    <div id="bairroN">
+                        <input type="text" name="Bairro" required="required" placeholder="Bairro">
 
-                <input type="text" name="Bairro" required="required" placeholder="Bairro">
+                        <input type="number" name="Numero" required="required" placeholder="Número">
+                    </div>
 
-                <input type="number" name="Numero" required="required" placeholder="Número">
+                    <input type="submit" value="Cadastrar">
+                </form>
 
-                <input type="submit" value="Cadastrar">
-            </form>
+                <br>
+                    <p>Já tem uma conta?<a href="login.html">Entre</a></p>
+                
+            </div>
 
-            <br>
-                <p>Já tem uma conta?<a href="login.html">Entre</a></p>
-          
+            <div id="vaziobutton"></div>
         </div>
 
-    </div>  
-    <div id="vaziobutton"></div>
 
+    </main>
+
+    
+    <footer><!--Rodaper-->
+        
+        <div id="container">
+           <div id="rodape">
+               <div class="conteudo">
+                 <p class="titulo"> Endereço: </p>
+                 <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
+                 <p> CNPJ: 49.998.717/0001-63 </p>
+                 <p> Rodovia BA 430 - Shangrilá </p>
+           </div>
+              <div class="conteudo"> 
+                 <p class="titulo"> Acesse as nossas redes sociais: </p>
+                 <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
+                 <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram: lagoinhastore.lapa</a></p>
+                 <p> Contato: (77) 98851-7707</p>
+               </div> 
+               <div class="conteudo"> 
+                 <p class="titulo"> Acesso Rápido: </p>
+                 <p> Acessibilidade </p>
+                 <p> Temas </p>
+               </div> 
+               
+              </div>
+           </div>
+           
+       </footer>
 
 
 

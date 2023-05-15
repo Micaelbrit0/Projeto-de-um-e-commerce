@@ -74,11 +74,12 @@
                     <div id="parcelamento">
                         <p id="nome-parcelamento">Parcelamento</p>
                         <div id="parcelas">
-                        <details>
-                            <summary>3x R$ 0,00</summary>
-                            <p class="precoParcela">2x R$ 0,00</p>
-                            <p class="precoParcela">1x R$ 0,00</p>
-                        </details>
+                        <select>
+                            <option class="precoParcela" value="opcao1">3X R$ 0,00</option>
+                            <option class="precoParcela" value="opcao2">2X R$ 0,00</option>
+                            <option class="precoParcela" value="opcao3">1X R$ 0,00</option>
+                            
+                        </select>
                         </div>
 
                     </div>
@@ -87,7 +88,7 @@
                         <img id="imgFrete" src="img/frete.jpg" alt="Caminhão do frete">
                         <form>
                             <label for="calFrete">Frete</label>
-                            <input type="text"id="calFrete" name="calFrete" placeholder="Digite seu CEP" min="8">
+                            <input type="text"id="calFrete" name="calFrete" placeholder="Digite seu CEP" min="8" >
                         </form>
 
                     </div>
@@ -103,13 +104,14 @@
                     <div id="vazio"></div>
 
                     <div id="carrinho-compra">
-                        <div id="boxCarrinho">
+                        <button id="boxCarrinho">
                             <img src="./img/CarrinhoAdd.png" alt="carrinhoCompas id" id="carrinho">
                             <p id="adicionar">Adicionar ao carrinho</p>
-                        </div>
-                        <div id="boxCompra">
+                        </button>
+
+                        <button id="boxCompra">
                             <p id="comprar">Comprar</p>
-                        </div>
+                        </button>
 
 
                     </div>
@@ -122,20 +124,56 @@
         </section>
 
         <section id="descricao">
-            <h1 id="nome-descricao">Descrição do produto</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non doloremque ea sequi molestiae ex
-                eaque ratione magnam quia explicabo eos perspiciatis voluptatibus at omnis corporis tempora, distinctio
-                nihil repellat.</p>
+            <h2 id="nome-descricao">Descrição do produto</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non doloremque ea sequi molestiae exeaque ratione magnam quia explicabo eos perspiciatis voluptatibus at omnis corporis tempora, distinctionihil repellat.</p>
+
 
         </section>
 
         <section id="comentarios">
-            <div class="avaliacao">
-                <h1 id="nome-avaliacao">Avaliação</h1>
+            <div id="avaliacao">
+                <h2 id="nome-avaliacao">Avaliação</h2>
+                <hr>
+                <div id="fotoComentario">
+                    <div id="usuario">
+                        <figure id="figPerfil">
+                            <img src="" alt="foto de perfil" id="perfil">
+                        </figure>
+                        <p id="nomeDeUsuario">Nome de Usuario</p>
+                    </div>
+                    <div id="avaComenario">
+                        <ul class="checklist">
+                            <li class="checked"></li>
+                            <li class="checked"></li>
+                            <li class="checked"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non doloremque ea sequi molestiae ex
-                    eaque ratione magnam quia explicabo eos perspiciatis voluptatibus at omnis corporis tempora, distinctio
-                    nihil repellat.</p>
+                        <p id="cometario">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="fotoComentario">
+                    <div id="usuario">
+                        <figure id="figPerfil">
+                            <img src="" alt="foto de perfil" id="perfil">
+                        </figure>
+                        <p id="nomeDeUsuario">Nome de Usuario</p>
+                    </div>
+                    <div id="avaComenario">
+                        <ul class="checklist">
+                            <li class="checked"></li>
+                            <li class="checked"></li>
+                            <li class="checked"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+
+                        <p id="cometario">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
             </div>
         </section>
 

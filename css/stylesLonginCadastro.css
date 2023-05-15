@@ -1,4 +1,5 @@
-*{margin: 0;
+*{
+    margin: 0;
     padding: 0;
 }
    
@@ -7,11 +8,32 @@ body{
     background-color: rgba(236, 228, 228, 1);
     box-sizing: border-box;
 
+}
 
+/*Mein da pagina Longin*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+/*Mein da pagina Cadastro*/
+#meincadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+#container{
+    height: calc(100vh - 200); 
 }
 
 #menu{
-    width: 350hv;
     height: 100px;
     background-color: #252525;
     top: 0px;
@@ -21,71 +43,44 @@ body{
     flex-wrap: wrap;
     
 }
-
+/*Imagem no nave*/
 img{
     width: 150px;
-   
 }
 
-#vazio{
-    height: 50px;
-}
 
-#vaziobutton{
-    height: 100px;
-}
-
-#corLaranja{
-    margin: 100px 0 50px 0;
-    width: 250vh;
-    height: 300px;
-    background: #FD9E0F;
-    position: fixed;
-    z-index: -1;
-    bottom: 50px;
-    top:5px;
-    margin: 200px;
-    margin-top: 250px;
-
-}
-
-#cadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-
-}
-
-.login{
+/*DIV onde fica o formulario com do cadastro*/
+#formCadastro{
+    margin-top: 20px;
+    margin-bottom: 100px;
     background: #FFFFFF;
     border-radius: 41px;    
     Width:400px;
-    Height:800px;
+    Height:850px;
     padding: 50px;
-    top: 20px;
-    
+    margin-bottom: 100px;
     
 }
 
-
-
+/*Muda os inputs da um espaço entre eles*/
 input{
     margin-top: 20px ;
     border-radius: 8px;
-    display: flex;
-    
+    display: flex; 
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px;
 
 }
-
+/*define que o formulario sera em direção de coluna*/
 form{
     display: flex;
     flex-direction: column;
     width: 100%;
 
 }
-
+/*muda o botão de Cadastar*/
 form [type="submit"]{
     display: block;
     height: 50px;
@@ -99,15 +94,55 @@ form [type="submit"]{
     cursor: pointer;
 }
 
+/*Faz os 2 fomularios ocuparem 1 so linha*/
+#generoCPF{
+    display: flex;
+    justify-content: space-between;
+}
+
+#genero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7px;
+   
+}
+/*muda os p*/
+#nomeTex, #nomeTexDate{
+    font-size: 15px;
+    text-align: left;
+}
+
+#nomeTexDate{
+    padding-top: 10px;
+    margin-bottom: -20px;
+}
+/*Muda a caixa do genero*/
+#opcoes{
+    border-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 160px;
+    height: 30px;
+}
+
+#bairroN{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*muda a fonte do texto*/
+
 h1{
     font-family: 'Graduate', cursive;
     font-size: 40px;
 }
-label{
+label, select{
     font-family: 'Graduate', cursive;
 }
 
 p{
+    font-family:'Graduate', cursive; ;
     color: black;
    
 }
@@ -116,60 +151,44 @@ a{
     text-decoration: none;
     margin-left: 10px;
 }
-input{
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 2px;
-}
-#email, #senha{
-    height: 50px;
-}
 
-#espaco{
-    padding-right: 137px
-}
+/*-----Css deo login-----*/
 
-main{
+/*Onde ta o formulario de login*/
+
+#ladoEsq{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
+    align-items: end;
+    border: 1px solid white;
+    align-items: end;
+   
 }
 
-
-#LoginCadastro{
+#LoginEntra{
     background: #FFFFFF;
     border-radius: 41px;    
-    Width:400px;
-    Height:400px;
-    padding: 50px;
-    top: 20px;
+    Width:300px;
+    Height:350px;
+    padding:50px;
+    top:20px;
     flex-direction: column;
-    margin: 100px 300px 100px 0;
+    margin: 20px 0;
     flex-wrap: wrap;
     display: flex;
     
 }
 
+#email, #senha{
+    height: 50px;
+}
 
-#corLaranjaLongin{
-    margin: 100px 0 50px 0;
+
+#corLaranja{
+    height: 50vh;
     width: 100vw;
-    height: 430px;
     background: #FD9E0F;
     position: fixed;
     z-index: -1;
-    top:5px;
-    margin-top: 250px;
-    display: flex;
-    align-items: center;
-
-}
-
-#corLaranjaLongin img{
-    width: 600px;
-    margin: 200px;
 
 }
 
@@ -182,6 +201,7 @@ footer{
     height: 100px;
     text-align: center;
     color: white;
+    bottom: 0;
 }
 
 

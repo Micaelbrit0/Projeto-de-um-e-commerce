@@ -9,9 +9,15 @@ header{
     background-color: #252525;
     flex-direction: row;
     width: 100vw;
-    justify-content: center;
+    height: 120px;
+    justify-content: space-evenly;
     flex-wrap: wrap;  
 }
+#logolagoinha{
+    width: 150px;
+    margin-top: -20px;
+}
+
 li{
     list-style: none;
 }
@@ -22,15 +28,13 @@ a{
 .cor{
     color:#FFFFFF ;
 }
-.hea_superior{ /*div principal do header*/
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 #buscador{
     height: 30px;
+    width: 500px;
     padding: 15px;
-    font-family: 'Graduate';   
+    font-family: 'Graduate';  
+    flex-wrap: wrap;  
 }
 #button{
     height: 2.1rem;
@@ -40,19 +44,32 @@ a{
     border: none;
     border-radius: 0px  4px 4px 0px ;
     font-family: 'Graduate';
+    cursor: pointer;
 }
 #bus_but{/*div principal do buscador*/
     display: flex;
     justify-content: center;
+    
 }
+#buscador {
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
+#butonCarrinho{
+    display: flex;
+}
+
 #carrinho{
-    margin-top: 24px;  
+    margin-top: 20px;  
+    margin-left: 20px;
 }
 #cadastro_entrar{ /*div principal de cadastro e login*/
     display: flex;
     flex-direction: row;
-    margin-top: 32px;
-    margin-left: 80px;
+    margin-top: 25px;
     text-decoration: none;
     font-family: 'Graduate';
     color: #FFFFFF;
@@ -60,19 +77,24 @@ a{
 }
 nav ul li a {
     font-family: 'Graduate';
-    margin-top: 10px;
     display: inline-block;
     justify-content: center;
     padding: 10px;
     font-size: 25px;
-    text-decoration: none;    
+    text-decoration: none;  
 }
 nav ul {
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
     margin-left: 40px;  
 } /*A qui termina o css do header*/
+
+
+
+
 
 /* CSS DO RODAPE     */
 footer{

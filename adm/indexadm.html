@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoinha Store</title>
+    <link href="">
+    <link rel="stylesheet" href="./css/indexadm.css">
+    <script src="./js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>        
+                
+        <div>
+            <img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha">
+        </div>
+    
+        <div id="">
+           
+            <div id="bus_but">
+                <form action="" >  
+                                    
+                    <input type="search" id="buscador" placeholder="Buscar no site..."/>
+                    <button type="submit" id="button">Buscar</button>
+                            
+                </form> 
+            </div> 
+
+            <nav>
+            <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
+                <ul>
+                    <li><a href="">Novos Pedidos</a></li>
+                    <li><a href="">Pedidos Enviadoss</a></li>
+                </ul> 
+            </nav>
+        </div>
+    
+            <div id="sair">
+                <ul>
+                <li><a class="cor" href="../index.html"> Sair </a></li>
+                </ul>
+            </div>
+
+    </header>
+
+
+    <main><!--resto-->
+        <div id="mostruario">
+
+            <div id="categoria">
+                <div id="vazio"></div>
+                
+                <button id="boxAdd"onclick="window.location.href = '';" >
+                    <h2 id="ButonAdd">Adcionar Produto</h2>
+                </button>
+                <ul id="menuLateral">
+                    <li><a class="lateral" href="./mostruarioProdutos.html">Bíblias</a></li>
+                    <li><a class="lateral" href="">Acessórios</a></li>
+                    <li><a class="lateral" href="">Canecas</a></li>
+                    <li><a class="lateral" href="">Camisas</a></li>
+                    <li><a class="lateral" href="">Livros</a></li>
+                </ul> 
+
+            
+            </div>
+
+            <div id="produtos">
+                <div id="BoxNomeProduto"> 
+                    <h1>Nome do Produto</h1>
+                </div>
+
+                <div id="produtosMostruario">
+
+                    <div class="prodEditarExcluir">
+                        <div class="produto">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        <div class="butonsEditExcluir">
+                            <button class="button">Editar</button>
+                            <button class="button" onclick="acao()">Excluir</button>
+                            <div class="modal">
+
+                                <div onclick="fechar()" class="fechar"><p>X</p></div>
+                        
+                                <div id="conteudoModal">
+                                    <p id="texExclusão">Tem certeza que 
+                                        deseja excluir
+                                        o produto?</p>
+                                    <button class="buttonSN" id="buttonSim">Sim</button>
+                                    <button class="buttonSN" >Não</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prodEditarExcluir">
+                        <div class="produto">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        <div class="butonsEditExcluir">
+                            <button class="button">Editar</button>
+                            <button class="button" onclick="acao()">Excluir</button>
+                            <div class="modal">
+
+                                <div onclick="fechar()" class="fechar"><p>X</p></div>
+                        
+                                <div id="conteudoModal">
+                                    <p id="texExclusão">Tem certeza que 
+                                        deseja excluir
+                                        o produto?</p>
+                                    <button class="buttonSN" id="buttonSim">Sim</button>
+                                    <button class="buttonSN" >Não</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="prodEditarExcluir">
+                        <div class="produto">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        <div class="butonsEditExcluir">
+                            <button class="button">Editar</button>
+                            <button class="button" onclick="acao()">Excluir</button>
+                            <div class="modal">
+
+                                <div onclick="fechar()" class="fechar"><p>X</p></div>
+                        
+                                <div id="conteudoModal">
+                                    <p id="texExclusão">Tem certeza que 
+                                        deseja excluir
+                                        o produto?</p>
+                                    <button class="buttonSN" id="buttonSim">Sim</button>
+                                    <button class="buttonSN" >Não</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="prodEditarExcluir">
+                        <div class="produto">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        <div class="butonsEditExcluir">
+                            <button class="button">Editar</button>
+                            <button class="button" onclick="acao()">Excluir</button>
+                            <div class="modal">
+
+                                <div onclick="fechar()" class="fechar"><p>X</p></div>
+                        
+                                <div id="conteudoModal">
+                                    <p id="texExclusão">Tem certeza que 
+                                        deseja excluir
+                                        o produto?</p>
+                                    <button class="buttonSN" id="buttonSim">Sim</button>
+                                    <button class="buttonSN" >Não</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prodEditarExcluir">
+                        <div class="produto">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        <div class="butonsEditExcluir">
+                            <button class="button">Editar</button>
+                            <!-- Modal é o nome da janela flutuante -->
+                            <button class="button" onclick="acao()">Excluir</button>
+                            <!-- onclick é uma função do js que quando clickado acontece algo (no caso) abre a janela quando se clicka no botão Excluir-->
+                            <div class="modal">
+
+                                <div onclick="fechar()" class="fechar"><p>X</p></div>
+                                <!-- A janela flutuante e fechada -->
+                                <div id="conteudoModal">
+                                    <p id="texExclusão">Tem certeza que 
+                                        deseja excluir
+                                        o produto?</p>
+                                    <button class="buttonSN" id="buttonSim">Sim</button>
+                                    <button class="buttonSN" >Não</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+
+                </div>
+                    
+                    
+                    
+
+              
+            </div>
+    
+        </div>
+
+        
+        
+    </main>
+
+    <footer><!--Rodaper-->
+        
+        <div id="container">
+           <div id="rodape">
+               <div class="conteudo">
+                 <p class="titulo"> Endereço: </p>
+                 <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
+                 <p> CNPJ: 49.998.717/0001-63 </p>
+                 <p> Rodovia BA 430 - Shangrilá </p>
+           </div>
+              <div class="conteudo"> 
+                 <p class="titulo"> Acesse as nossas redes sociais: </p>
+                 <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
+                 <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram: lagoinhastore.lapa</a></p>
+                 <p> Contato: (77) 98851-7707</p>
+               </div> 
+               <div class="conteudo"> 
+                 <p class="titulo"> Acesso Rápido: </p>
+                 <p> Acessibilidade </p>
+                 <p> Temas </p>
+               </div> 
+               
+              </div>
+           </div>
+           
+       </footer>
+
+</body>
+
+</html>

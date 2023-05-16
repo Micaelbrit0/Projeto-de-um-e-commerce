@@ -9,15 +9,9 @@ header{
     background-color: #252525;
     flex-direction: row;
     width: 100vw;
-    height: 120px;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;  
 }
-#logolagoinha{
-    width: 150px;
-    margin-top: -20px;
-}
-
 li{
     list-style: none;
 }
@@ -28,13 +22,15 @@ a{
 .cor{
     color:#FFFFFF ;
 }
-
+.hea_superior{ /*div principal do header*/
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
 #buscador{
     height: 30px;
-    width: 500px;
     padding: 15px;
-    font-family: 'Graduate';  
-    flex-wrap: wrap;  
+    font-family: 'Graduate';   
 }
 #button{
     height: 2.1rem;
@@ -44,34 +40,18 @@ a{
     border: none;
     border-radius: 0px  4px 4px 0px ;
     font-family: 'Graduate';
-    cursor: pointer;
 }
 #bus_but{/*div principal do buscador*/
     margin-top: 14.5px;
     display: flex;
     justify-content: center;
-    
 }
-#buscador {
-    max-width: 650px;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-/*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
-#butonCarrinho{
-    display: flex;
-}
-
 #carrinho{
-    margin-top: 20px;  
-    margin-left: 20px;
     margin-top: 38px;  
 }
 #cadastro_entrar{ /*div principal de cadastro e login*/
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
     margin-top: 48px;
     margin-left: 80px;
     text-decoration: none;
@@ -88,11 +68,12 @@ nav ul {
 }
 nav ul li a {
     font-family: 'Graduate';
+    margin-top: 10px;
     display: inline-block;
     justify-content: center;
     padding: 10px;
     font-size: 25px;
-    text-decoration: none;  
+    text-decoration: none;    
 }
  /*A qui termina o css do header*/
 
@@ -160,11 +141,6 @@ p{
 .dim_destaque{/*section onde fica os destaques*/
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 40px;  
-} /*A qui termina o css do header*/
     align-items: center;
     justify-content: center;
     margin: 19px;
@@ -175,16 +151,13 @@ p{
 }
 /*Aqui termina o css do main*/
 
-
-
-
-
 /* CSS DO RODAPE     */
 footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(36, 36, 36);
+    width: 100vw;
     height: 100px;
     text-align: center;
     color: white;

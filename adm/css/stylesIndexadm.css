@@ -110,7 +110,7 @@ main{
 
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p, label{
     font-family: 'Graduate';
 }
 h1{
@@ -290,52 +290,66 @@ img{
     height: 150px;
     border: 1px solid red;
     
-  }
-
-  
-/* CSS DO RODAPE */
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(36, 36, 36);
-    height: 100px;
-    text-align: center;
-    color: white;
 }
 
-#container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-#rodape{
-  display: flex;
-  justify-content: space-between;
-  width:100%;                                                                                                            
-  font-size: 13px;
-  font-family: 'Graduate', cursive;
-}
-
-.conteudo{
-  width: 250px;
-  padding: 10px;
-  
-}
-
-  
-.titulo{
-    color:rgba(182, 182, 182, 0.815); 
-    text-decoration: none;
-}
-
-.redesocial{
-    color: white; 
-    text-decoration: none;
-
-}
 
 /* CSS da janela Modal */
+
+.modalEditar{
+    width: 500px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+    position: absolute;
+    /* essa parte do codigo coloca janela no meio da tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* Oque faz a janela sumir e o display none */
+    display: none;
+   
+}
+
+#conteudoModalEditar{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   justify-content: center;
+}
+
+#caixaSave{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoriaDeProdutos{
+    margin: 5px;
+    font-size: 20px;
+
+}
+
+select{
+    height: 30px;
+}
+
+input{
+    height:30px;
+}
+
+#campoImagem{
+    display: flex;
+    flex-direction: column;
+}
+
+#boxDescricao{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 /* tamananho da janela */
 .modal{
 
@@ -381,12 +395,12 @@ footer{
     background: #A4A0A0;
 }
 
-#buttonSim{
+#buttonSim, #buttonSalvar{
     margin-bottom: 10px;
     background-color: #FD9E0F;
 }
 
-.fechar{
+.fechar, .fecharEditar{
     margin-top: 20px;
     width: 30px;
     float: right;
@@ -394,3 +408,46 @@ footer{
     color: #FD9E0F;
 }
 
+
+  
+/* CSS DO RODAPE */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#rodape{
+  display: flex;
+  justify-content: space-between;
+  width:100%;                                                                                                            
+  font-size: 13px;
+  font-family: 'Graduate', cursive;
+}
+
+.conteudo{
+  width: 250px;
+  padding: 10px;
+  
+}
+
+  
+.titulo{
+    color:rgba(182, 182, 182, 0.815); 
+    text-decoration: none;
+}
+
+.redesocial{
+    color: white; 
+    text-decoration: none;
+
+}

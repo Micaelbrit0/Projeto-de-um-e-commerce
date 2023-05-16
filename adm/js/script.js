@@ -16,3 +16,23 @@ function fechar(){
     modal.style.display = 'none';
 
 }
+
+
+function acaoEditar(){
+
+    let modal = document.querySelector('.modalEditar')
+
+
+    modal.style.display = 'block';
+}
+
+
+
+function fecharEditar(){
+
+    let modal = document.querySelector('.modalEditar')
+
+
+    modal.style.display = 'none';
+
+}

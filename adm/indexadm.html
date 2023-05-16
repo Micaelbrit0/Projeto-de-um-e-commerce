@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoinha Store</title>
     <link href="">
-    <link rel="stylesheet" href="./css/indexadm.css">
+    <link rel="stylesheet" href="./css/stylesIndexadm.css">
     <script src="./js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,120 +89,59 @@
                             <h4>R$0,00</h4>
                         </div>
                         <div class="butonsEditExcluir">
-                            <button class="button">Editar</button>
-                            <button class="button" onclick="acao()">Excluir</button>
-                            <div class="modal">
-
-                                <div onclick="fechar()" class="fechar"><p>X</p></div>
-                        
-                                <div id="conteudoModal">
-                                    <p id="texExclusão">Tem certeza que 
-                                        deseja excluir
-                                        o produto?</p>
-                                    <button class="buttonSN" id="buttonSim">Sim</button>
-                                    <button class="buttonSN" >Não</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prodEditarExcluir">
-                        <div class="produto">
-                            <figure>
-                                <img src="" alt="foto do produto">
-                            </figure>
-                            <h3>nome do produto</h3>
-                            <h4>R$0,00</h4>
-                        </div>
-                        <div class="butonsEditExcluir">
-                            <button class="button">Editar</button>
-                            <button class="button" onclick="acao()">Excluir</button>
-                            <div class="modal">
-
-                                <div onclick="fechar()" class="fechar"><p>X</p></div>
-                        
-                                <div id="conteudoModal">
-                                    <p id="texExclusão">Tem certeza que 
-                                        deseja excluir
-                                        o produto?</p>
-                                    <button class="buttonSN" id="buttonSim">Sim</button>
-                                    <button class="buttonSN" >Não</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="prodEditarExcluir">
-                        <div class="produto">
-                            <figure>
-                                <img src="" alt="foto do produto">
-                            </figure>
-                            <h3>nome do produto</h3>
-                            <h4>R$0,00</h4>
-                        </div>
-                        <div class="butonsEditExcluir">
-                            <button class="button">Editar</button>
-                            <button class="button" onclick="acao()">Excluir</button>
-                            <div class="modal">
-
-                                <div onclick="fechar()" class="fechar"><p>X</p></div>
-                        
-                                <div id="conteudoModal">
-                                    <p id="texExclusão">Tem certeza que 
-                                        deseja excluir
-                                        o produto?</p>
-                                    <button class="buttonSN" id="buttonSim">Sim</button>
-                                    <button class="buttonSN" >Não</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="prodEditarExcluir">
-                        <div class="produto">
-                            <figure>
-                                <img src="" alt="foto do produto">
-                            </figure>
-                            <h3>nome do produto</h3>
-                            <h4>R$0,00</h4>
-                        </div>
-                        <div class="butonsEditExcluir">
-                            <button class="button">Editar</button>
-                            <button class="button" onclick="acao()">Excluir</button>
-                            <div class="modal">
-
-                                <div onclick="fechar()" class="fechar"><p>X</p></div>
-                        
-                                <div id="conteudoModal">
-                                    <p id="texExclusão">Tem certeza que 
-                                        deseja excluir
-                                        o produto?</p>
-                                    <button class="buttonSN" id="buttonSim">Sim</button>
-                                    <button class="buttonSN" >Não</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prodEditarExcluir">
-                        <div class="produto">
-                            <figure>
-                                <img src="" alt="foto do produto">
-                            </figure>
-                            <h3>nome do produto</h3>
-                            <h4>R$0,00</h4>
-                        </div>
-                        <div class="butonsEditExcluir">
-                            <button class="button">Editar</button>
-                            <!-- Modal é o nome da janela flutuante -->
-                            <button class="button" onclick="acao()">Excluir</button>
-                            <!-- onclick é uma função do js que quando clickado acontece algo (no caso) abre a janela quando se clicka no botão Excluir-->
-                            <div class="modal">
-
-                                <div onclick="fechar()" class="fechar"><p>X</p></div>
+                            <button class="button" onclick="acaoEditar()">Editar</button>
+                            <div class="modalEditar">
+                
+                                <div onclick="fecharEditar()" class="fecharEditar"><p>X</p></div>
                                 <!-- A janela flutuante e fechada -->
+                                <div id="conteudoModalEditar">
+                                    <h2>Editar</h2>
+                                    <div class="categoriaDeProdutos">
+                                        <label for="categorias">Categoria</label>
+                                        <select id="categorias">
+                                            <option class="categoria" value="opcao1">Biblías</option>
+                                            <option class="categoria" value="opcao2">Acessórios</option>
+                                            <option class="categoria" value="opcao3">Cenecas</option>
+                                            <option class="categoria" value="opcao4">Camisas</option>
+                                            <option class="categoria" value="opcao5">Livros</option>
+                                            
+                                            
+                                        </select>
+                
+                                    </div>
+                
+                                    <div class="categoriaDeProdutos">
+                                        <label for="nomeProduto">Nome do produto</label>
+                                        <input type="text" id="nomeProduto" placeholder="Nome">
+                                    </div>
+                
+                                    <div class="categoriaDeProdutos">
+                                        <label for="preco">Preço</label>
+                                        <input type="number" id="preco" placeholder="R$0,00">
+                                    </div>
+                
+                                    <div class="categoriaDeProdutos">
+                                        <label for="imagens">Selecione uma Imagem</label>
+                                        <input type="file" id="imagens">
+                                    </div>
+                
+                
+                                    <div class="categoriaDeProdutos" id="boxDescricao">
+                                        <label for="decricao">Descrição</label>
+                                        <textarea id="decricao" cols="1" rows="8"></textarea>
+                                    </div>
+                
+                                    <div id="caixaSave">
+                                    <button class="buttonSN" id="buttonSalvar">Salva</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                
+
+                            <button class="button" onclick="acao()">Excluir</button>
+                            <div class="modal">
+                                <div onclick="fechar()" class="fechar"><p>X</p></div>
                                 <div id="conteudoModal">
                                     <p id="texExclusão">Tem certeza que 
                                         deseja excluir
@@ -213,6 +152,8 @@
                             </div>
                         </div>
                     </div>
+
+                   
 
                     
                     

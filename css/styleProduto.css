@@ -3,10 +3,99 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Aqui inicia o css do header*/
 header{
-    background-color: black;
-    height: 100px;
+    display: flex;
+    background-color: #252525;
+    flex-direction: row;
+    width: auto;
+    height: 120px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
 }
+#logolagoinha{
+    width: 150px;
+    margin-top: -20px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:rgba(253, 158, 15, 1)  ;
+}
+.cor{
+    color:#FFFFFF ;
+}
+
+#buscador{
+    height: 30px;
+    width: 500px;
+    padding: 15px;
+}
+
+#button{
+    height: 2.1rem;
+    padding: 5px;
+    margin-top: 30px;
+    background-color:rgba(253, 158, 15, 1) ;
+    border: none;
+    border-radius: 0px  4px 4px 0px ;
+    cursor: pointer;
+}
+#bus_but{/*div principal do buscador*/
+    display: flex;
+    justify-content: center;
+    
+}
+#buscador {
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
+#butonCarrinho{
+    display: flex;
+}
+
+#carrinho{
+    margin-top: 20px;  
+    margin-left: 20px;
+    width:45px;
+    height:45px;
+}
+#cadastro_entrar{ /*div principal de cadastro e login*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px; 
+}
+nav ul li a {
+    display: inline-block;
+    justify-content: center;
+    padding-left: 15px;
+    font-size: 25px;
+    text-decoration: none;  
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;  
+} 
+
+/*A qui termina o css do header*/
+
+
+
+
+
 
 body {
     background: #D9D9D9;
@@ -20,6 +109,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+   
 }
 /* Fica os dois lados do produto(imagem e nome do produto) na deireção de linha*/
 #container{
@@ -30,7 +120,6 @@ main{
     display: flex;
     flex-direction: row;
     margin: 20px;
-    padding: 30px;
     flex-wrap: wrap;
 }
 /* Peguei 4 pedaçõs da tela que foi dividida em 6*/
@@ -38,32 +127,59 @@ main{
     flex: 2;
 }
 
-figure{
+#produtoPrincipal figure{
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    
     
 }
-
-#produtoPrincipal{
+#fotoProdPrincipla{
     border: 1px solid red;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin-bottom: 10px;
-    padding: 10px;
+
 }
+
+#imagens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+
+}
+.outrasImagens{
+    border: 1px solid red;
+    width: 80px;
+    height: 80px;
+}
+
+.imagem :hover{
+    cursor: pointer;
+}
+
 
 #favoritar{
     display: flex;
     align-items: center;
     margin-top: 10px;
+
 }
+
 #nomeFav{
     font-size: 15px;
+   
 }
 .coracao {
 font-size: 20px; /* tamanho do coração */
 color: gray; /* cor do coração desmarcado */
 cursor: pointer;
+margin-left: 40px;
+
 
 }
   
@@ -80,30 +196,14 @@ color: red; /* cor do coração marcado */
     flex: 6;
 }
 
-#imagens{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-    justify-content: center;
-
-
+#texNomeProd{
+    margin-top: 20px;
 }
 
-.imagem{
-    border: 1px solid red;
-    width: 100px;
-    height: 100px;
-}
-/* Quando passar o mouse vai ficar meio braca a imagem*/
-.imagem :hover{
-    background-color: rgba(255, 255, 255, 0.402);
-    cursor: pointer;
-}
 h1, h2{
     text-align: center;
-    font-size: 25px;
-    font-family: 'Graduate';
+    font-size: 20px;
+   
 }
 
 /* Criei uma lista para fazer as estrelas, o  content: "\2606" faz elas ficarem nessa forma */
@@ -119,80 +219,51 @@ ul{
  }
  /* "\2606" para representar uma estrela vazia e "\2605" para uma estrela preenchida. Utilizamos o seletor ::before para adicionar o caractere antes do conteúdo de cada item da lista.*/
 
- .checklist li::before {
+.checklist li::before {
     content: "\2606"; 
     margin-right: 5px;
     
- }
+}
  
- .checklist li.checked::before {
+.checklist li.checked::before {
     content: "\2605"; 
     color: #FD9E0F;
- }
+}
 
- #preco{
+#preco{
     display: flex;
     align-items: center;
     justify-content: center;
- }
- #boxPreco{
+}
+
+#boxPreco{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 400px;
     height: 45px;
     background-color: #D9D9D9;
     border-radius: 14px;
- }
- p, label{
+}
+
+p, label{
     font-size: 20px;
     font-family: 'Graduate';
- }
- #parcelamento{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-around;  
-    position: relative;
-    z-index: 1
-
- }
- select{
-    margin-left: 15px;
-    background-color: #D9D9D9;
-    cursor: pointer;
-   
-    
- }
-
-
-
-.precoParcela {
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    
 }
+
 
 #frete{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    margin: 20px;
+    
   
 }
-#imgFrete{
-    height:30px;
-    
-}
-
-label{
-    margin-right:20px;
-}
-
 
 input[type="text"]{
-    width: 120px;
+    width: 200px;
     height: 25px;
     background-color: #D9D9D9;
     border: none;
@@ -205,18 +276,21 @@ input[type="text"]::placeholder {
 
 #quantidade{
     display: flex;
-    padding-top: 20px;
-    justify-content: center;
+    justify-content: start;
+    margin: 20px;
 }
 #nomeQuant{
-    margin-right:40px ;
+    margin-right:20px;
+    margin-top: 5px;
 }
 
-button {
+#buttonsQuant{
     font-size: 18px;
     padding: 5px 10px;
     cursor: pointer;
+    align-items: center;
 }
+
   
 #increaseBtn, #decreaseBtn, #quantityInput{
     margin: 2px;
@@ -224,9 +298,8 @@ button {
     height: 30px;
     text-align: center;
     border-radius: 0px;
-    color: #FD9E0F;
+    color: black;
     font-weight: bold;
-    font-family: 'Graduate';
 }
 #carrinho{
     padding-left: 10px;
@@ -236,7 +309,8 @@ button {
     background-color: #D9D9D9
 }
 #increaseBtn:hover, #decreaseBtn:hover{
-    background-color: #FD9E0F;
+    background-color: #252525;
+    cursor: pointer;
     color: white;
 
 }
@@ -252,12 +326,17 @@ button {
     margin: 20px;
 }
 
+#carrinhobuton{
+   margin-left: 2px;
+}
+
 #boxCarrinho{
     display: flex;
-    border: 2px solid #FD9E0F;
+    border: 2px solid #252525;
     text-align: center;
-    border-radius: 14px;
+    border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
 
 }
 
@@ -270,7 +349,7 @@ content: url(/LagoinhaStore/img/CarrinhoAddbranco.png); /* Altera a imagem quand
 }
 
 #boxCompra{
-    border: 2px solid #FD9E0F;
+    border: 2px solid #252525;
     border-radius: 14px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -283,15 +362,16 @@ content: url(/LagoinhaStore/img/CarrinhoAddbranco.png); /* Altera a imagem quand
 }
 
 #adicionar, #comprar{
-    font-size: 10px;
-    width: 100px;
+    font-size: 15px;
     cursor: pointer;
+    margin: 5px;
 }
 #boxCarrinho:hover, #boxCompra:hover{
-    background-color: #FD9E0F;
+    background-color: #252525;
     color: white;
 }
 
+/*CSS da descição*/
 #descricao{
     width: 700px;
     height: 300px;
@@ -308,6 +388,10 @@ content: url(/LagoinhaStore/img/CarrinhoAddbranco.png); /* Altera a imagem quand
     margin: 5px;
     font-size: 20px;
     text-align: left;
+}
+
+#descricao p{
+    font-size: 15px;
 }
 hr{
     border-color: #FD9E0F; /* Definindo a cor da borda */
@@ -365,4 +449,53 @@ hr{
 
 #fotoComentario{
     margin-left:20px ;
+}
+
+
+
+/* CSS DO RODAPE */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+#containeRodape {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#rodape{
+  display: flex;
+  justify-content: space-between;
+  width:100%;                                                                                                            
+  font-size: 13px;
+}
+
+.conteudoRodape{
+  width: 250px;
+  
+}
+.conteudoRodape p{
+    font-size: 13px;
+}
+.titulo p{
+    font-size: 13px;
+}
+
+  
+.titulo{
+    color:rgba(182, 182, 182, 0.815); 
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.redesocial{
+    color: white; 
+    text-decoration: none;
+
 }

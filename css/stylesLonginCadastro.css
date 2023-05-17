@@ -2,35 +2,9 @@
     margin: 0;
     padding: 0;
 }
-   
-   
-body{
-    background-color: rgba(236, 228, 228, 1);
-    box-sizing: border-box;
-
-}
-
-/*Mein da pagina Longin*/
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-}
-/*Mein da pagina Cadastro*/
-#meincadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-
-#container{
-    height: calc(100vh - 200); 
+ /* imagem do menu */  
+img{
+    width: 150px;
 }
 
 #menu{
@@ -43,22 +17,50 @@ main{
     flex-wrap: wrap;
     
 }
-/*Imagem no nave*/
-img{
-    width: 150px;
+   
+body{
+    background-color: rgba(236, 228, 228, 1);
+
+}
+
+/*Main da pagina Longin*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+/*Mein e container da pagina Cadastro*/
+#meincadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#containerLogin{
+    height: auto;
+    min-height: calc(100vh -200px);
+}
+
+#containerCadastro{
+    height: auto;
 }
 
 
 /*DIV onde fica o formulario com do cadastro*/
 #formCadastro{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 100px;
     background: #FFFFFF;
     border-radius: 41px;    
     Width:400px;
-    Height:850px;
+    Height:870px;
     padding: 50px;
-    margin-bottom: 100px;
+
     
 }
 
@@ -84,10 +86,9 @@ form{
 form [type="submit"]{
     display: block;
     height: 50px;
-    background: #FD9E0F;
+    background: #252525;
     box-shadow: 0px 4px 4px rgba(0,0, 0, 0.25);
     border-radius: 23px;
-    font-family: 'Graduate', cursive;
     font-size: 20px;
     color: white;
     font-weight: bolder;
@@ -134,15 +135,11 @@ form [type="submit"]{
 /*muda a fonte do texto*/
 
 h1{
-    font-family: 'Graduate', cursive;
     font-size: 40px;
-}
-label, select{
-    font-family: 'Graduate', cursive;
 }
 
 p{
-    font-family:'Graduate', cursive; ;
+   
     color: black;
    
 }
@@ -172,7 +169,7 @@ a{
     padding:50px;
     top:20px;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 40px 0;
     flex-wrap: wrap;
     display: flex;
     
@@ -183,14 +180,7 @@ a{
 }
 
 
-#corLaranja{
-    height: 50vh;
-    width: 100vw;
-    background: #FD9E0F;
-    position: fixed;
-    z-index: -1;
 
-}
 
 /* CSS DO RODAPE */
 footer{
@@ -201,11 +191,9 @@ footer{
     height: 100px;
     text-align: center;
     color: white;
-    bottom: 0;
 }
 
-
-#container {
+#containeRodape {
     display: flex;
     flex-wrap: wrap;
   }
@@ -215,19 +203,24 @@ footer{
   justify-content: space-between;
   width:100%;                                                                                                            
   font-size: 13px;
-  font-family: 'Graduate', cursive;
 }
 
-.conteudo{
+.conteudoRodape{
   width: 250px;
-  padding: 10px;
   
+}
+.conteudoRodape p{
+    font-size: 13px;
+}
+.titulo p{
+    font-size: 13px;
 }
 
   
 .titulo{
     color:rgba(182, 182, 182, 0.815); 
     text-decoration: none;
+    font-size: 13px;
 }
 
 .redesocial{
@@ -235,6 +228,5 @@ footer{
     text-decoration: none;
 
 }
-
 
 

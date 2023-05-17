@@ -6,111 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoinha Store</title>
-    <link href="">
     <link rel="stylesheet" href="css/stylesTelaInicial.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/logopassaro.png"/>
 
 
 </head>
 
 <body>
-    <header>
-        <body>
-            <header>        
-                
-                <div class="hea_superior">
-        
-                    <div>
-                        <img src="IMG/logo.png"  alt="Logo lagoinha store" width="100px" height="100px" >
-                    </div>
-        
-                    <div>
-                         <div id="bus_but">
-                            <form action="" >  
+    <header> 
+        <div>
+            <a href="./index.html"><img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
+        </div>
+            
+        <div>
+            <div id="butonCarrinho">
+                <div id="bus_but">
+                    <form action="" >  
+                                            
+                        <input type="search" id="buscador" placeholder="Buscar no site..."/>
+                        <button type="submit" id="button">Buscar</button>
                                     
-                                <input type="search" id="buscador" placeholder="Buscar no site..."style="margin:auto;max-width:300px"/>
-                                <button type="submit" id="button">Buscar</button>
-                            
-                            </form> 
-                        </div> 
-                        <nav >
-                        <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
-                            <ul>
-                                <li><a href="">Bíblias</a></li>
-                                <li><a href="">Acessórios</a></li>
-                                <li><a href="">Canecas</a></li>
-                                <li><a href="">Camisas</a></li>
-                                <li><a href="">Livros</a></li>
-                            </ul> 
-                        </nav>
-                    </div>
+                    </form> 
+                </div> 
         
-                    <div>
-                        <a href=""><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
-                    </div>
+                <figure>
+                    <a href=""><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
+                <figure>
+            </div>
+            <nav>
+            <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
+                <ul>
+                    <li><a href="./mostruarioProdutos.html">Bíblias</a></li>
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Canecas</a></li>
+                    <li><a href="">Camisas</a></li>
+                    <li><a href="">Livros</a></li>
+                    </ul> 
+                </nav>
+        </div>
+            
+            <div id="cadastro_entrar">  <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
+                <ul>
+                <li><a class="cor" href="./cadastro.html"> Cadastro </a>|<a class="cor" href="./login.html"> Entrar</a></li>
+                </ul>
+            </div>
         
-                    <div id="cadastro_entrar">  <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
-                        <ul>
-                            <li><a class="cor" href=""> Cadastro </a>|<a class="cor" href=""> Entrar</a></li>
-                        </ul>
-                    </div>
-                    
-                </div>
-         
-            </header>
-        
-        
-
     </header>
 
 
     <main><!--resto-->
         <div id="painel"><!-- div de todo o painel-->
     
-            <section id="div_cate"><div><p style="color:rgba(253, 158, 15, 1) ;font-size: 35px;">Categorias</p><hr></div><!--section de categoria contendo as divs e seus respectivos links-->
+            <section id="div_cate">
+                <div id="boxCategoria">
+                    <h1>Categorias</h1>
+                    <hr>
+                </div><!--section de categoria contendo as divs e seus respectivos links-->
                 
                 <div class="categorias">
                 
-                    <div >                  
-                        <a href=""><img src="IMG/Bíblias.png" alt="Bíblias" width="100px" height="100px">
+                    <div>                  
+                        <a href="./mostruarioProdutos.html"><img src="IMG/Bíblias.png" alt="Bíblias" width="100px">
                         <p >Bíblias</p></a>
                     </div>
 
                     <div >            
-                        <a href=""><img src="IMG/Acessorios.png" alt="Acessoriost" width="100px" height="100px"><p >Acessórios</p> </a>
+                        <a href=""><img src="IMG/Acessorios.png" alt="Acessoriost" width="100px"><p >Acessórios</p> </a>
                     </div>
 
                     <div >             
-                        <a href=""><img src="IMG/Canecas.png" alt="Canecas" width="100px" height="100px"><p >Canecas</p></a>
+                        <a href=""><img src="IMG/Canecas.png" alt="Canecas" width="100px"><p >Canecas</p></a>
                     </div>
 
                     <div>
-                        <a href=""><img   src="IMG/Camisas.png"   alt="Camisas" width="100px"  height="100px"><p  >Camisas</p> </a>
+                        <a href=""><img src="IMG/Camisas.png"   alt="Camisas" width="100px"><p >Camisas</p> </a>
                     </div>
 
                     <div>
-                        <a href=""><img src="IMG/Livros.png" alt="Livros" width="100px" height="100px"><p >Livros</p></a>
+                        <a href=""><img src="IMG/Livros.png" alt="Livros" width="100px"><p >Livros</p></a>
                     </div>
                 </div>
             </section >
             
-            <section id="destaque"><div><p style="color:rgba(253, 158, 15, 1) ;font-size: 35px;">Destaque</p></div><!--section isolada informando que a baixo é a área de destaque-->     
-            </section>
-               
-                <section class="div_des">        
-                    <section class="sec_des" >
-                        <div class="dim_destaque"></div>
-                        <div class="dim_destaque"></div>
-                        <div class="dim_destaque"></div>
-                        <div class="dim_destaque"></div>
-                        <div class="dim_destaque"></div>
-                        <div class="dim_destaque"></div>
-                        <div class="dim_destaque"></div>
-                        <div class="dim_destaque"></div>
-                    </section>
-                </section>
-            
-    </main>
+            <section id="destaques">
+                <div id="produtos">
+                    <div id="BoxNomeProduto"> 
+                        <h2>Destaques</h2>
+                    </div>
+    
+                    <div id="produtosMostruario">
+    
+                        <div class="produto" onclick="window.location.href = 'produto.html';">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
 
+                        <div class="produto" onclick="window.location.href = 'produto.html';">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        
+
+                        <div class="produto" onclick="window.location.href = 'produto.html';">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        
+
+                        <div class="produto" onclick="window.location.href = 'produto.html';">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        
+
+                        <div class="produto" onclick="window.location.href = 'produto.html';">
+                            <figure>
+                                <img src="" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                        
+                        
+    
+                        
+    
+                    </div>
+                </div>
+            </section>
+        </div>  
     </main>
 
     <footer><!--Rodaper-->

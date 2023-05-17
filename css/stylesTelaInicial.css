@@ -1,4 +1,4 @@
-/*A qui inicia o css do header*/
+/*Aqui inicia o css do header*/
 *{  
     margin: 0px;
     padding: 0px;
@@ -8,10 +8,16 @@ header{
     display: flex;
     background-color: #252525;
     flex-direction: row;
-    width: 100vw;
-    justify-content: center;
+    width: auto;
+    height: 120px;
+    justify-content: space-evenly;
     flex-wrap: wrap;  
 }
+#logolagoinha{
+    width: 150px;
+    margin-top: -20px;
+}
+
 li{
     list-style: none;
 }
@@ -22,16 +28,13 @@ a{
 .cor{
     color:#FFFFFF ;
 }
-.hea_superior{ /*div principal do header*/
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 #buscador{
     height: 30px;
+    width: 500px;
     padding: 15px;
-    font-family: 'Graduate';   
 }
+
 #button{
     height: 2.1rem;
     padding: 5px;
@@ -39,49 +42,61 @@ a{
     background-color:rgba(253, 158, 15, 1) ;
     border: none;
     border-radius: 0px  4px 4px 0px ;
-    font-family: 'Graduate';
+    cursor: pointer;
 }
 #bus_but{/*div principal do buscador*/
-    margin-top: 14.5px;
     display: flex;
     justify-content: center;
+    
 }
+#buscador {
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
+#butonCarrinho{
+    display: flex;
+}
+
 #carrinho{
-    margin-top: 38px;  
+    margin-top: 20px;  
+    margin-left: 20px;
 }
 #cadastro_entrar{ /*div principal de cadastro e login*/
     display: flex;
     flex-direction: row;
-    margin-top: 48px;
-    margin-left: 80px;
+    margin-top: 25px;
     text-decoration: none;
-    font-family: 'Graduate';
     color: #FFFFFF;
     font-size: 25px; 
+}
+nav ul li a {
+    display: inline-block;
+    justify-content: center;
+    padding-left: 15px;
+    font-size: 25px;
+    text-decoration: none;  
 }
 nav ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 10%;
-    margin-left: 155px;   
-}
-nav ul li a {
-    font-family: 'Graduate';
-    margin-top: 10px;
-    display: inline-block;
     justify-content: center;
-    padding: 10px;
-    font-size: 25px;
-    text-decoration: none;    
-}
- /*A qui termina o css do header*/
+    align-items: center;
+    margin-left: 40px;  
+} 
+
+/*A qui termina o css do header*/
+
+
+
 
 /*Aqui inicia o css do main*/
 
 #painel{   
     display: flex;
-    width: 100vw;
+    width: auto;
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -96,11 +111,13 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: azure;     
+    background-color: white;     
 }
-img{
+
+#div_cate img{
    margin: 10px;
 }
+
 #div_cate{ /*Div categoria*/
     width: 60%;
     margin: 30px;
@@ -108,47 +125,112 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: azure;
+    background-color: white;
     border-radius: 15px 15px 15px 15px;
     font-family: 'Graduate';
     font-size: 25px;
 }
-p{
+
+#div_cate p{
     color: #000000;
 }
-#destaque{/*section principal dos destaques*/
+
+#destaques{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center ;
+    gap: 20px;
     width: 60%;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    background-color: azure;
-    border-radius: 15px 15px 15px 15px;
-    flex-direction: row;
-}
-.div_des{
-    display: flex;
-    justify-content: center;
-}
-.sec_des{
-    width: 72%;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    background-color: argb(215, 211, 211)qua;
-    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 60px;
+    
 }
-.dim_destaque{/*section onde fica os destaques*/
+
+#produtos{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 19px;
-    width: 10.5rem;
-    height: 13rem;
-    background-color: azure;
-    border-radius: 15px 15px 15px 15px;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
+#produtosMostruario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#boxCategoria{
+    font-family: 'Patua One', cursive;
+}
+
+#BoxNomeProduto{
+    width: 60vw;
+    height: 40px;
+    background-color: white;
+    border-radius: 14px;
+    font-family: 'Patua One', cursive;
+    
+}
+.produto{
+    flex-direction: column;
+    width: 200px;
+    height: 240px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.produto figure {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+.produto img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+.produto:hover{
+    cursor: pointer;
+    
+}
+
+.produto img{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+}
+
+
+h1,h2{
+    text-align: left;
+    color: black;
+    padding: 5px 0px 10px 30px;
+    font-size: 25px;
+}
+
+h3{
+    font-size: 15px;
+    margin: 5px 25px;
+    text-align: left;
+    color: rgb(38, 37, 37)
+}
+h4{
+    font-size: 15px;
+    margin: 5px 25px;
+    text-align: left;
+    color: rgb(38, 37, 37)
+}
+
+
+
+
 /*Aqui termina o css do main*/
 
 /* CSS DO RODAPE     */
@@ -157,7 +239,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     background-color: rgb(36, 36, 36);
-    width: 100vw;
+    width: auto;
     height: 100px;
     text-align: center;
     color: white;
@@ -174,7 +256,7 @@ footer{
   justify-content: space-between;
   width:100%;                                                                                                            
   font-size: 13px;
-  font-family: 'Graduate', cursive;
+
 }
 
 .conteudo{

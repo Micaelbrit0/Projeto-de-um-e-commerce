@@ -8,16 +8,52 @@
     <title>Página produto</title>
     <link rel="stylesheet" href="./css/styleProduto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="./js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/logopassaro.png"/>
+ 
     
 </head>
 
 <body>
-    <header>
+    <header> 
+        <div>
+            <a href="./index.html"><img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
+        </div>
+            
+        <div>
+            <div id="butonCarrinho">
+                <div id="bus_but">
+                    <form action="" >  
+                                            
+                        <input type="search" id="buscador" placeholder="Buscar no site..."/>
+                        <button type="submit" id="button">Buscar</button>
+                                    
+                    </form> 
+                </div> 
+        
+                <figure>
+                    <a href=""><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras"></a>
+                <figure>
+            </div>
+            <nav>
+            <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
+                <ul>
+                    <li><a href="./mostruarioProdutos.html">Bíblias</a></li>
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Canecas</a></li>
+                    <li><a href="">Camisas</a></li>
+                    <li><a href="">Livros</a></li>
+                </ul> 
+                </nav>
+        </div>
+            
+            <div id="cadastro_entrar">  <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
+                <ul>
+                <li><a class="cor" href="./cadastro.html"> Cadastro </a>|<a class="cor" href="./login.html"> Entrar</a></li>
+                </ul>
+            </div>
         
     </header>
+
     <main>
         <section id="produto">
             <div id="container">
@@ -27,20 +63,20 @@
 
                         <div id="produtoPrincipal">
                             <figure>
-                                <img src="" alt="foto do produto">
+                                <img src="./img/produto1.jpg" alt="foto do produto" id="fotoProdPrincipla">
                             </figure>
                         </div>
 
                         <div id="imagens">
                             <div class="imagem">
                                 <figure>
-                                    <img src="" alt="foto do produto">
+                                    <img src="./img/produto1.jpg" alt="foto do produto" class="outrasImagens">
                                 </figure>
 
                             </div>
                             <div class="imagem">
                                 <figure>
-                                    <img src="" alt="foto do produto">
+                                    <img src="./img/produto1.jpg" alt="foto do produto" class="outrasImagens">
                                 </figure>
 
                             </div>
@@ -55,12 +91,15 @@
                     </div>
 
                 </div>
-
+                    <!-- Aqui começa o lado direito da div -->
                 <div id="lado-direito">
-                    <h1>Nome do produto</h1>
+                    <div id="texNomeProd">
+                        <h1>Nome do produto</h1>
+                    </div>
+    
                     <ul class="checklist">
                         <li class="checked"></li>
-                        <li></li>
+                        <li class="checked"></li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -71,23 +110,9 @@
                         </div>
                     </div>
 
-                    <div id="parcelamento">
-                        <p id="nome-parcelamento">Parcelamento</p>
-                        <div id="parcelas">
-                        <select>
-                            <option class="precoParcela" value="opcao1">3X R$ 0,00</option>
-                            <option class="precoParcela" value="opcao2">2X R$ 0,00</option>
-                            <option class="precoParcela" value="opcao3">1X R$ 0,00</option>
-                            
-                        </select>
-                        </div>
-
-                    </div>
-
                     <div id="frete">
-                        <img id="imgFrete" src="img/frete.jpg" alt="Caminhão do frete">
                         <form>
-                            <label for="calFrete">Frete</label>
+                            <label for="calFrete" id="labelFrete">Frete</label>
                             <input type="text"id="calFrete" name="calFrete" placeholder="Digite seu CEP" min="8" >
                         </form>
 
@@ -95,9 +120,11 @@
 
                     <div id="quantidade">
                         <p id="nomeQuant">Quantidade:</p>
-                        <button id="increaseBtn">+</button>
-                        <input type="text" id="quantityInput" value="1" readonly>
-                        <button id="decreaseBtn">-</button>
+                        <div id="buttonsQuant">
+                            <button id="increaseBtn">+</button>
+                            <input type="text" id="quantityInput" value="1" readonly>
+                            <button id="decreaseBtn">-</button>
+                        </div>
 
                     </div>
 
@@ -105,12 +132,13 @@
 
                     <div id="carrinho-compra">
                         <button id="boxCarrinho">
-                            <img src="./img/CarrinhoAdd.png" alt="carrinhoCompas id" id="carrinho">
+
+                            <img src="./img/CarrinhoAdd.png" alt="carrinhoCompas" id="carrinhobuton">
                             <p id="adicionar">Adicionar ao carrinho</p>
                         </button>
 
                         <button id="boxCompra">
-                            <p id="comprar">Comprar</p>
+                            <p id="comprar">Comprar agora</p>
                         </button>
 
 
@@ -179,6 +207,34 @@
 
 
     </main>
+
+    
+    <footer><!--Rodaper-->
+        
+        <div id="containeRodape">
+           <div id="rodape">
+               <div class="conteudoRodape">
+                 <p class="titulo"> Endereço: </p>
+                 <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
+                 <p> CNPJ: 49.998.717/0001-63 </p>
+                 <p> Rodovia BA 430 - Shangrilá </p>
+                </div>
+              <div class="conteudoRodape"> 
+                 <p class="titulo"> Acesse as nossas redes sociais: </p>
+                 <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
+                 <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram: lagoinhastore.lapa</a></p>
+                 <p> Contato: (77) 98851-7707</p>
+               </div> 
+               <div class="conteudoRodape"> 
+                 <p class="titulo"> Acesso Rápido: </p>
+                 <p> Acessibilidade </p>
+                 <p> Temas </p>
+               </div> 
+               
+            </div>
+        </div>
+           
+       </footer>
 
 
 

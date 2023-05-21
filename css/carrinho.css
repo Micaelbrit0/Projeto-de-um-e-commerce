@@ -1,0 +1,264 @@
+/*Aqui inicia o css do header*/
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    background-color: #252525;
+    flex-direction: row;
+    width: auto;
+    height: 120px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+}
+#logolagoinha{
+    width: 150px;
+    margin-top: -20px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:rgba(253, 158, 15, 1)  ;
+}
+.cor{
+    color:#FFFFFF ;
+}
+
+#buscador{
+    height: 30px;
+    width: 500px;
+    padding: 15px;
+}
+
+#button{
+    height: 2.1rem;
+    padding: 5px;
+    margin-top: 30px;
+    background-color:rgba(253, 158, 15, 1) ;
+    border: none;
+    border-radius: 0px  4px 4px 0px ;
+    cursor: pointer;
+}
+#bus_but{/*div principal do buscador*/
+    display: flex;
+    justify-content: center;
+    
+}
+#buscador {
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
+#butonCarrinho{
+    display: flex;
+}
+
+#carrinho{
+    margin-top: 20px;  
+    margin-left: 20px;
+}
+#cadastro_entrar{ /*div principal de cadastro e login*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px; 
+}
+nav ul li a {
+    display: inline-block;
+    justify-content: center;
+    padding-left: 15px;
+    font-size: 25px;
+    text-decoration: none;  
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;  
+} 
+
+/*A qui termina o css do header*/
+
+
+ /*Aqui começao css do main*/
+
+ .painel_carrinho{
+    width: 100vw;
+    height: auto;
+    background-color:#D9D9D9 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+ }
+ #section_um{
+    display: flex;
+    padding: 30px;
+    width: 60%;
+    background-color: #FFFFFF;
+    margin: 40px;
+    margin-block-end: 20px;
+    border-radius: 4px 4px 4px 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+#section_dois{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    width: 60%;
+    padding: 18px;
+    flex-wrap: wrap;
+    border-radius: 4px 4px 4px 4px;
+}
+#checkbox{
+    margin: 15px;
+}
+.div_produto{
+    width: 100px;
+    height: 100px;
+    background-color: #D9D9D9;
+    margin: 15px;
+}
+.nome_produto{
+    margin-top: 15px;
+}
+.nome_produto2{
+    margin-top: 40px;
+    margin-left: -85px;
+}
+#in_pre{
+    margin-left:60px;
+    display: flex;
+    align-items: center;
+}
+#quantidade{
+    background-color: #D9D9D9;
+    width: 40px;  
+}
+#preço{
+    margin-left: 30px;
+}
+#section_tres{
+    margin: 20px;
+    margin-block-end: 40px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+    border-radius: 4px 4px 4px 4px;  
+}
+#cupon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+#img_cupon{
+    margin-left: 61%;
+    margin-top: 15px;
+}
+#nome_cupon{
+    margin-left: 68%;
+    margin-top: -25px;
+}
+#inserir_codigo{
+    margin-left: 80%;
+    padding: 18px;
+    margin-top: -34px;
+}
+#total_rs_button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 28px;
+} 
+
+#checkbox2{
+    margin-top: 30px;
+    margin-left: 33px;
+}
+#Selecione_tudo{
+    margin-left: 7%;
+    margin-top: -18px;
+}
+#Apagar{
+    margin-left: 23%;
+    margin-top: -18px;
+}
+#total{
+    margin-left: 50%;
+    margin-top: -42px;
+}
+#rs{
+    margin-left: 65%;
+    margin-top: -42px;
+}
+#comprar{
+    width: 5rem;
+    height: 2rem;
+    margin-left: 78%;
+    margin-top: -49px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+ /*Aqui termina css do main*/
+
+ /* CSS DO RODAPE     */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    width: auto;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#rodape{
+  display: flex;
+  justify-content: space-between;
+  width:100%;                                                                                                            
+  font-size: 13px;
+
+}
+
+.conteudo{
+  width: 250px;
+  padding: 10px;
+  
+}
+
+  
+.titulo{
+    color:rgba(182, 182, 182, 0.815); 
+    text-decoration: none; 
+}
+
+.redesocial{
+    color: white; 
+    text-decoration: none; 
+}

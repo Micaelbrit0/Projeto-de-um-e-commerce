@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="icon" type="image/png" href="./img/logopassaro.png"/>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <a href="./index.html"><img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
+        </div>
+
+        <div>
+            <div id="butonCarrinho">
+                <div id="bus_but">
+                    <form action="">
+
+                        <input type="search" id="buscador" placeholder="Buscar no site..." />
+                        <button type="submit" id="button">Buscar</button>
+
+                    </form>
+                </div>
+
+                <figure>
+                    <a href=""><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px"
+                            height="45px"></a>
+                    <figure>
+            </div>
+            <nav>
+                <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
+                <ul>
+                    <li><a href="./mostruarioProdutos.html">Bíblias</a></li>
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Canecas</a></li>
+                    <li><a href="">Camisas</a></li>
+                    <li><a href="">Livros</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="cadastro_entrar">
+            <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
+            <ul>
+                <li><a class="cor" href="./cadastro.html"> Cadastro </a>|<a class="cor" href="./login.html"> Entrar</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <!-------------------------------------------------------------------------------------------------------------------->
+
+
+    <main>
+        <div class="usuario">
+            <div id="foto">
+                <img src="img/download.jpg" alt="Foto do perfil">
+                <p>Nome</p>
+
+            </div>
+            <br>
+
+
+            <div id="perfil">
+                <img src="img/usuario.png" alt="Usuário">
+                <a class="nomes" href="Dados_perfil.html">Minha conta</a>
+            </div>
+
+
+            <div id="compras">
+                <img src="img/compras.png" alt="Minhas compras">
+
+                <a class="nomes" href="minhascompras.">Minhas compras</a>
+            </div>
+
+            <div id="favoritos">
+                <img src="img/favorito.png" alt="Favoritos">
+                <a class="nomes" href="./Favoritos.html">Favoritos</a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="container">
+            <h1>Meu perfil</h1>
+            <hr id="linha">
+            <div class="dados" id="DivNomeUsuario">
+                <Label id="nomedeUsuario">Nome de Usuario</Label>
+                <p>NomedoUsario</p>
+            </div>
+
+            <div class="dados" id="DivNome">
+                <Label id="nome">Nome</Label>
+                <input for="nome" id="nome">
+            </div>
+
+            <div class="dados" id="DivCPF">
+                <Label id="CPF">CPF</Label>
+                <p>***.****.****-**</p>
+            </div>
+
+            <!-- fazer uma janela modal -->
+
+            <div class="dados" id="divEmail">
+                <Label id="email">Email</Label>
+                <p>xxx@gmail.com</p>
+                <button class="button" onclick="acao()">Trocar</button>
+                        <div class="modal">
+                            <div onclick="fechar()" class="fechar"><p>X</p></div>
+                            <div id="conteudoModal">
+                                <div class="dadosNovoEmail">
+                                    <label for="emailAntigo">Digite o antigo Email</label>
+                                    <input type="text" id="emailAntigo" required>
+                                    </div>
+
+                                <div class="dadosNovoEmail">
+                                            <label for="novoEmail">Digite o novo Email</label>
+                                            <input type="text" id="novoEmail" required>
+                                    </div>
+
+                                    <div class="dadosNovoEmail">
+                                        <label for="confnovoEmail">Confirme o email</label>
+                                        <input type="text" id="confnovoEmail" required>
+                                    </div>
+
+                                    <input type="submit" name="Salvar dados" value="Salvar dados" class="buttonEnviar">
+                                </div>
+                            </div>
+                </button>
+
+            </div>
+            
+            <div class="dados" id="telefone">
+                <Label id="tel">Numero do Telefone</Label>
+                <p>(**)*******</p>
+                <!--Fazer outra janela modal-->
+            </div>
+
+            <div class="dados" id="genero"> 
+                <label>Gênero:</label>
+                <label> 
+                <input class="circulo" type="radio" name=" Gênero" value="Feminino"> Feminino</label>
+                <label><input class="circulo" type="radio" name=" Gênero" value="Masculino"> Masculino</label>
+                <label><input class="circulo" type="radio" name=" Gênero" value="Outro"> Outro</label>
+            </div>
+            
+            <div>
+                <label>Data de nascimento:</label>
+                <input id="data" type="date" neme="Data de Nascimento" value="Data de Nascimento">
+            </div>
+
+
+
+            <div id="editar">
+                <input type="submit" name="Salvar dados" value="Salvar dados">
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-------------------------------------------------------------------------------------------------------------------->
+    <footer><!--Rodapé-->
+
+        <div id="footerContainer">
+            <div id="rodape">
+                <div class="conteudo">
+                    <p class="titulo"> Endereço: </p>
+                    <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
+                    <p> CNPJ: 49.998.717/0001-63 </p>
+                    <p> Rodovia BA 430 - Shangrilá </p>
+                </div>
+                <div class="conteudo">
+                    <p class="titulo"> Acesse as nossas redes sociais: </p>
+                    <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
+                    <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram:
+                            lagoinhastore.lapa</a></p>
+                    <p> Contato: (77) 98851-7707</p>
+                </div>
+                <div class="conteudo">
+                    <p class="titulo"> Acesso Rápido: </p>
+                    <p> Acessibilidade </p>
+                    <p> Temas </p>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

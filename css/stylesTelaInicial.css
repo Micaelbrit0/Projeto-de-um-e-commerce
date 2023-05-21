@@ -94,6 +94,12 @@ nav ul {
 
 /*Aqui inicia o css do main*/
 
+main{
+    min-height: calc(100vh - 160px);
+    background-color: 
+    rgb(215, 211, 211);
+}
+
 #painel{   
     display: flex;
     width: auto;
@@ -104,8 +110,6 @@ nav ul {
     font-size: 25px;
     text-align: center;
     justify-content: center;
-    background-color: 
-    rgb(215, 211, 211);
 }
 .categorias  {/*estiliza a div que conten div com os icones de categoria*/
     display: flex;
@@ -139,7 +143,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center ;
+    justify-content:center;
     gap: 20px;
     width: 60%;
     flex-wrap: wrap;
@@ -151,14 +155,17 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items:center;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
 #produtosMostruario{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 #boxCategoria{

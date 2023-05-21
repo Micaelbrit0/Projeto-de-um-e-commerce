@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(236, 228, 228, 1);
+    flex-wrap: wrap;
+
+
+}
+
+/*---------------------------------------------------- */
+header {
+    display: flex;
+    background-color: #252525;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#logolagoinha {
+    width: 150px;
+    margin-top: -20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(253, 158, 15, 1);
+}
+
+.cor {
+    color: #FFFFFF;
+}
+
+#buscador {
+    height: 30px;
+    width: 500px;
+    padding: 15px;
+    font-family: 'Graduate';
+    flex-wrap: wrap;
+}
+
+#button {
+    height: 2.1rem;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: rgba(253, 158, 15, 1);
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    font-family: 'Graduate';
+    cursor: pointer;
+}
+
+#bus_but {
+    /*div principal do buscador*/
+    display: flex;
+    justify-content: center;
+
+}
+
+#buscador {
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
+#butonCarrinho {
+    display: flex;
+}
+
+#carrinho {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#cadastro_entrar {
+    /*div principal de cadastro e login*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    text-decoration: none;
+    font-family: 'Graduate';
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+nav ul li a {
+    font-family: 'Graduate';
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+/*A qui termina o css do header*/
+
+
+/*---------------------------------------------------- */
+
+main {
+    min-height: calc(100vh - 220px);
+    width: 100%;
+    display: flex;
+    
+}
+
+.usuario {
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    line-height: 50px;
+    /*espaçamento entre linhas*/
+    font-size: 25px;
+    margin-top: 50px;
+    width: 35vh;
+
+}
+
+#foto {
+    display: flex;
+    gap: 10px;
+
+
+
+}
+
+#foto img {
+    width: 81px;
+    height: 75px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+
+
+}
+
+#usuario img {
+    width: 81px;
+    height: 75px;
+}
+
+#perfil {
+    display: flex;
+    gap: 10px;
+
+
+
+
+}
+
+#perfil img {
+    width: 35px;
+    height: 35px;
+
+}
+
+#compras {
+    display: flex;
+    gap: 10px;
+}
+
+#compras img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+#favoritos {
+    display: flex;
+    gap: 10px;
+}
+
+#favoritos img {
+    width: 30px;
+    height: 30px;
+}
+
+.nomes {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------- */
+
+
+
+.container {
+    background: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60vw;
+    height: auto;
+    border-radius: 37px;
+    padding: 47px;
+    margin: 40px;
+
+}
+
+#linha {
+    width: auto;
+    left: 406px;
+    top: 340px;
+    border: 1.5px solid #FD9E0F;
+}
+
+.dados{
+    margin: 10px;
+    display: flex;
+}
+.dados label{
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.dados p{
+    margin-left: 15px;
+    color: #696666;
+}
+
+button{
+    border: none;
+    margin: 10px;
+    background-color: none;
+    color: #FD9E0F;
+    cursor: pointer;
+}
+
+#genero input{
+    width: 40px;
+}
+
+
+
+#data {
+
+    width: 120px;
+    height: 30px;
+}
+
+#editar{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#editar input{
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border-radius: 12px;
+    color: white;
+    background: #252525;
+    font-size: 15px;
+
+}
+
+#letra {
+    color: black;
+}
+
+/*---------------------------------------------------- */
+
+
+.modal{
+
+    width: 500px;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+    position: absolute;
+    /* essa parte do codigo coloca janela no meio da tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* Oque faz a janela sumir e o display none */
+    display: none; 
+    border: 1px solid;
+    
+}
+
+#conteudoModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px;
+
+   
+
+}
+
+.buttonEnviar{
+    width: 100px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border-radius: 12px;
+    color: white;
+    background: #252525;
+    margin-top: 40px;
+}
+input{
+    height:30px;
+    width: 400px;
+    border: 1px solid;
+}
+
+label{
+    font-size: 20px;
+}
+
+
+.dadosNovoEmail{
+    margin: 10px;
+    margin-left: 40px;
+}
+
+
+.fechar{
+    margin: 20px;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    color: #FD9E0F;
+}
+
+
+/*---------------------------------------------------- */
+
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+    text-align: center;
+    color: white;
+    bottom: 0;
+
+}
+
+
+#footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+#rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-size: 13px;
+}
+
+.conteudo {
+    width: 250px;
+    padding: 10px;
+
+}
+
+
+.titulo {
+    color: white;
+    text-decoration: none;
+}
+
+.redesocial {
+    color: white;
+    text-decoration: none;
+
+}

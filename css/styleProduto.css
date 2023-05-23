@@ -104,6 +104,9 @@ body {
 
 /* Coloquei os elementos em coluna*/
 main{
+    min-height: calc(100vh - 220px);
+    width: 100%;
+    display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;

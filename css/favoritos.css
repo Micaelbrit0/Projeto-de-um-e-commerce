@@ -17,7 +17,7 @@ header{
     background-color: #252525;
     flex-direction: row;
     width: 100vw;
-    height: 120px;
+    height: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;  
 }
@@ -179,6 +179,7 @@ main{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    margin-bottom: 40px;
 }
 
 #prodFav{
@@ -258,7 +259,8 @@ footer{
 #rodape{
   display: flex;
   justify-content: space-between;
-  width:100vw;                                    font-size: 13px;
+  width:100vw; 
+  width: auto;                               font-size: 13px;
 }
 
 .conteudo{

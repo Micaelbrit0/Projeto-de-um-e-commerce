@@ -10,7 +10,7 @@ header{
     background-color: #252525;
     flex-direction: row;
     width: auto;
-    height: 120px;
+    height: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;  
 }

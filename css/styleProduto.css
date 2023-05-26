@@ -10,7 +10,7 @@ header{
     background-color: #252525;
     flex-direction: row;
     width: auto;
-    height: 120px;
+    height: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;  
 }
@@ -90,12 +90,7 @@ nav ul {
     margin-left: 40px;  
 } 
 
-/*A qui termina o css do header*/
-
-
-
-
-
+/*Aqui termina o css do header*/
 
 body {
     background: #D9D9D9;
@@ -143,7 +138,7 @@ main{
     border: 1px solid red;
     width: 250px;
     height: 250px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 20px;
 
 }
 
@@ -197,6 +192,7 @@ color: red; /* cor do coração marcado */
 /* Dividir a tela em 6*/
 #lado-direito{
     flex: 6;
+    padding-top: 20px;
 }
 
 #texNomeProd{

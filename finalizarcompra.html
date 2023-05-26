@@ -56,11 +56,24 @@
 
     <main>
         <div class="painel_end">
-            <section id="section_um">
+
+            <section id="TipoDeEntrega">
+
 
                     <div id="titulo_end" >
-                        <h2> Endereço de Entrega </h2>
+                        <div id="opcaoEntrega">
+                    
+                            <select class="custom-select">
+                                <option class="opcRet" value="opcao1">Endereço de Entrega</option>
+                                <option class="opcRet" value="opcao2">Retirar na Loja</option>
+                                
+                            </select>
+                        
+                        </div>
                     </div>
+
+                    <!--Vai ser necessário fazer uma função em js para quando alterar a opção mudar o display no css -->
+
                     <div id="dados_end"> 
                         <div class="dados">
                             <p> Maria Vitória Sousa (77) 00000-0000</p>
@@ -70,12 +83,28 @@
                         </div>
                         <div class="dados">
                             <button id="trocar"> Trocar </button>
+                            <!--Fazer uma janela Modal-->
                         </div>
                     </div>
+
+
+                    <div id="dados_entrega"> 
+                        <div class="dados">
+                            <p> Igreja Batista Lagoinha - Bom Jesus da Lapa (77) 00000-0000</p>
+                        </div>
+                        <div class="dados"> 
+                            <p> Rodovia BA 430 - Shangrilá </p>
+                        </div>
+                        <div class="dados" id="aviso">
+                            <p>Assim que o pagamento for confirmado, aguardar o produto ficar pronto para retirada</p>
+                        </div>
+                    </div>
+
+
             </section>  
 
 
-            <section id="section_dois">
+            <section id="infDosProdutos">
                  
                 <div id="titulo_produto"> 
                     <h2> Produtos Pedidos </h2>
@@ -111,15 +140,37 @@
                     </div>
                 </div>
                 <hr>
+                <div id="parteInferior">
+                    <div id="tipoEntrega">
+                        <p>Entrega Padrão</p>
+                        <p id="obs">Chegará entre xx/xx até xx/xx</p>
+
+                    </div>
+
+                    <div class="total">
+                        <p>R$0,00</p>
+
+                    </div>
+                </div>
             </section>
 
 
 
-            <section id="section_tres"> 
-                <div id="Entrega"> 
-                    <p> Subtotal dos produtos: R$ 00,00</p>
-                    <p> Total de Envio: R$ 00,00</p>
-                    <p> Pagamento Total:</p>
+            <section id="totalCompra"> 
+                <div id="texEntrega"> 
+                    <p> Subtotal dos produtos:</p>
+                    <p> Total de Envio:</p>
+                    <p id="pagTotal"> Pagamento Total:</p>
+                </div>
+                <div id="valor">
+                    <p>R$ 0,00</p>
+                    <p>R$ 0,00</p>
+                    <div class="total">
+                        <p>R$0,00</p>
+
+                    </div>
+                    <button id="fazerPedido">Fazer Pedido</button>
+
                 </div>
             </section>           
         </div>

@@ -30,7 +30,7 @@
                 </div> 
         
                 <figure>
-                    <a href=""><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
+                    <a href="carrinho.html"><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
                 <figure>
             </div>
             <nav>
@@ -61,9 +61,11 @@
                 <input type="checkbox" id="checkbox">
                 <div class="div_produto"><img style="width: 100px;height: 100px;" src="" alt="Foto do podruto">
                 </div><p class="nome_produto">Nome do produto</p><p class="nome_produto2">Descrição</p>
-                <div id="in_pre"> <input id="quantidade" type="number">
-                <p id="preço">Preço R$</p>
-            </div>
+                <div id="buttonsQuant">
+                    <button id="increaseBtn">+</button>
+                    <input type="text" id="quantityInput" value="1" readonly>
+                    <button id="decreaseBtn">-</button>
+                </div><p id="preço">Preço R$</p>
                 
             </section>
             <section id="section_tres"> 

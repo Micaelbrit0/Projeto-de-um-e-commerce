@@ -9,7 +9,7 @@ header{
     background-color: #252525;
     flex-direction: row;
     width: auto;
-    height: 120px;
+    height: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;  
 }
@@ -139,17 +139,28 @@ nav ul {
     margin-top: 40px;
     margin-left: -85px;
 }
-#in_pre{
-    margin-left:60px;
-    display: flex;
+#buttonsQuant{
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
     align-items: center;
 }
-#quantidade{
-    background-color: #D9D9D9;
-    width: 40px;  
+
+  
+#increaseBtn, #decreaseBtn, #quantityInput{
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 0px;
+    color: black;
+    font-weight: bold;
 }
 #preço{
     margin-left: 30px;
+    margin-top: 53px;
 }
 #section_tres{
     margin: 20px;

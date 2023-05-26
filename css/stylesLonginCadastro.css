@@ -8,7 +8,7 @@ img{
 }
 
 #menu{
-    height: 100px;
+    height: auto;
     background-color: #252525;
     top: 0px;
     display: flex;

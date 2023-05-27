@@ -104,7 +104,7 @@ main{
 
 }
 
-.painel_carrinho{
+.painel_end{
     width: 100vw;
     height: auto;
     display: flex;
@@ -113,9 +113,53 @@ main{
     flex-wrap: wrap;
     align-items: center;
     
- }
- #section_um{
+}
+
+.custom-select {
+    width: auto;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#dados_end{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px; 
+    /* display: block; */
+    /* quando o display esta block o flex nao funciona(vamos ter que resolver)*/
+}
+
+
+#dados_entrega{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px; 
+    display: none;
+}
+
+#aviso{
+    background-color: #FD9E0F;
+    text-align: center;
+}
+
+
+
+button{
+    border: none;
+    font-size: 15px; 
+    color: #FD9E0F;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+#TipoDeEntrega{
+    display: flex;
+    flex-direction: column;
     padding: 30px;
     width: 60%;
     background-color: #FFFFFF;
@@ -124,128 +168,143 @@ main{
     border-radius: 4px 4px 4px 4px;
     justify-content: center;
     flex-wrap: wrap;
- }
-#section_dois{
+}
+
+#titulo_produto{
     display: flex;
-    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#infDosProdutos{
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
     width: 60%;
     padding: 18px;
     flex-wrap: wrap;
     border-radius: 4px 4px 4px 4px;
-}
-#checkbox{
-    margin: 15px;
+    
 }
 
-.dados{
+#produto{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
     justify-content: space-between;
-
+    
 }
+
+#imgProd{
+    display: flex;
+}
+
+
+#itens{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.inf{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.text_nome{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.text_numero{
+    display: flex;
+    flex-direction: column;
+}
+
+#vazio{
+    height: 20px;
+}
+
+
+hr{
+    margin-block-end: 20px;
+    border-color:rgba(253, 158, 15, 1) ;
+    width: auto;
+}
+.dados{
+    justify-content: end;
+}
+
 .div_produto{
-    width: 100px;
-    height: 100px;
-    background-color: #D9D9D9;
     margin: 15px;
 }
-.nome_produto{
-    margin-top: 15px;
-}
-.nome_produto2{
-    margin-top: 40px;
-    margin-left: -85px;
-}
-#buttonsQuant{
-    margin-top: 40px;
-    margin-left: 60px;
-    font-size: 18px;
-    padding: 5px 10px;
-    cursor: pointer;
-    align-items: center;
+
+#nProduto{
+    display:flex ;
+    flex-direction: column;
+    margin: 20px;
 }
 
-  
-#increaseBtn, #decreaseBtn, #quantityInput{
-    margin: 2px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 0px;
-    color: black;
-    font-weight: bold;
+#parteInferior{
+    display: flex;
+    justify-content: end;
+    margin: 0 20px;
 }
-#preço{
-    margin-left: 30px;
-    margin-top: 53px;
+#tipoEntrega{
+    margin-right:40px;
+    display: flex;
+    flex-direction: column;
 }
-#section_tres{
+
+#obs{
+    color: #FD9E0F;
+    margin-top: 5px;
+}
+
+.total{
+    font-size: 30px;
+}
+
+
+
+#totalCompra{
     margin: 20px;
     margin-block-end: 40px;
     width: 60%;
     display: flex;
-    flex-direction: column;
     background-color: #FFFFFF;
     flex-wrap: wrap;
-    border-radius: 4px 4px 4px 4px;  
+    border-radius: 4px;  
+    justify-content: end;
+    height: auto;
+    padding: 20px;
 }
-#cupon{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-}
-#img_cupon{
-    margin-left: 61%;
-    margin-top: 15px;
-}
-#nome_cupon{
-    margin-left: 68%;
-    margin-top: -25px;
-}
-#inserir_codigo{
-    margin-left: 80%;
-    padding: 18px;
-    margin-top: -34px;
-}
-#total_rs_button{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 28px;
-} 
 
-#checkbox2{
-    margin-top: 30px;
-    margin-left: 33px;
+#texEntrega{
+    margin-right:40px;
 }
-#Selecione_tudo{
-    margin-left: 7%;
-    margin-top: -18px;
+
+#pagTotal{
+    margin: 10px;
 }
-#Apagar{
-    margin-left: 23%;
-    margin-top: -18px;
-}
-#total{
-    margin-left: 50%;
-    margin-top: -42px;
-}
-#rs{
-    margin-left: 65%;
-    margin-top: -42px;
-}
-#comprar{
-    width: 5rem;
-    height: 2rem;
-    margin-left: 78%;
-    margin-top: -49px;
-    background-color: black;
+#fazerPedido{
+    background-color: #252525;
     color: white;
-    border: none;
-    border-radius: 10px 10px 10px 10px;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
- /*Aqui termina css do main*/
+/*Aqui termina css do main*/
 
  /* CSS DO RODAPE     */
 footer{

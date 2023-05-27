@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoinha Store</title>
+    <link href="">
+    <link rel="stylesheet" href="css/stylesFinalizarCompra.css">
+    <link rel="icon" type="image/png" href="./img/logopassaro.png"/>
+
+
+</head>
+
+<body>
+    <header> 
+        <div>
+            <a href="./index.html"><img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
+        </div>
+            
+        <div>
+            <div id="butonCarrinho">
+                <div id="bus_but">
+                    <form action="" >  
+                                            
+                        <input type="search" id="buscador" placeholder="Buscar no site..."/>
+                        <button type="submit" id="button">Buscar</button>
+                                    
+                    </form> 
+                </div> 
+        
+                <figure>
+                    <a href=""><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
+                <figure>
+            </div>
+            <nav>
+            <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
+                <ul>
+                    <li><a href="./mostruarioProdutos.html">Bíblias</a></li>
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Canecas</a></li>
+                    <li><a href="">Camisas</a></li>
+                    <li><a href="">Livros</a></li>
+                    </ul> 
+                </nav>
+        </div>
+            
+            <div id="cadastro_entrar">  <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
+                <ul>
+                <li><a class="cor" href="./Dados_perfil.html"> Perfil </a>|<a class="cor" href="./index.html"> Sair</a></li>
+                </ul>
+            </div>
+        
+    </header>
+
+    <main>
+        <div class="painel_end">
+
+            <section id="TipoDeEntrega">
+
+
+                    <div id="titulo_end" >
+                        <div id="opcaoEntrega">
+                    
+                            <select class="custom-select">
+                                <option class="opcRet" value="opcao1">Endereço de Entrega</option>
+                                <option class="opcRet" value="opcao2">Retirar na Loja</option>
+                                
+                            </select>
+                        
+                        </div>
+                    </div>
+
+                    <!--Vai ser necessário fazer uma função em js para quando alterar a opção mudar o display no css -->
+
+                    <div id="dados_end"> 
+                        <div class="dados">
+                            <p> Maria Vitória Sousa (77) 00000-0000</p>
+                        </div>
+                        <div class="dados"> 
+                            <p> Rua Santa Isabel, Joao Paulo II, n° 06, 47600-000 </p>
+                        </div>
+                        <div class="dados">
+                            <button id="trocar"> Trocar </button>
+                            <!--Fazer uma janela Modal-->
+                        </div>
+                    </div>
+
+
+                    <div id="dados_entrega"> 
+                        <div class="dados">
+                            <p> Igreja Batista Lagoinha - Bom Jesus da Lapa (77) 00000-0000</p>
+                        </div>
+                        <div class="dados"> 
+                            <p> Rodovia BA 430 - Shangrilá </p>
+                        </div>
+                        <div class="dados" id="aviso">
+                            <p>Assim que o pagamento for confirmado, aguardar o produto ficar pronto para retirada</p>
+                        </div>
+                    </div>
+
+
+            </section>  
+
+
+            <section id="infDosProdutos">
+                 
+                <div id="titulo_produto"> 
+                    <h2> Produtos Pedidos </h2>
+                </div>
+
+                <div id="produto">
+
+                    <div id="imgProd">
+
+                    <div class="div_produto">
+                        <img style="width: 100px;height: 100px;" src="./img/produto1.jpg" alt="Foto do podruto">
+                    </div>
+                    <div id="nProduto">
+                        <p>Nome do produto</p>
+                        <p>Descrição</p>
+                    </div>
+                    </div>
+
+                    <div id="itens">
+                        <div class="inf" id="preco">
+                            <p class="text_nome"> Preços </p>
+                            <p class="text_numero"> R$ 00,00 </p>
+                        </div>
+                        <div class="inf"id="unidade">
+                            <p class="text_nome"> Unidade </p>
+                            <p class="text_numero"> 1 </p>
+                        </div>
+                        <div  class="inf" id="subtotal">
+                            <p class="text_nome"> Subtotal de Itens</p>
+                            <div id="vazio"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div id="parteInferior">
+                    <div id="tipoEntrega">
+                        <p>Entrega Padrão</p>
+                        <p id="obs">Chegará entre xx/xx até xx/xx</p>
+
+                    </div>
+
+                    <div class="total">
+                        <p>R$0,00</p>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="totalCompra"> 
+                <div id="texEntrega"> 
+                    <p> Subtotal dos produtos:</p>
+                    <p> Total de Envio:</p>
+                    <p id="pagTotal"> Pagamento Total:</p>
+                </div>
+                <div id="valor">
+                    <p>R$ 0,00</p>
+                    <p>R$ 0,00</p>
+                    <div class="total">
+                        <p>R$0,00</p>
+
+                    </div>
+                    <button id="fazerPedido">Fazer Pedido</button>
+
+                </div>
+            </section>           
+        </div>
+
+    </main>
+
+    <footer><!--Rodaper-->
+        
+        <div id="container">
+           <div id="rodape">
+               <div class="conteudo">
+                 <p class="titulo"> Endereço: </p>
+                 <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
+                 <p> CNPJ: 49.998.717/0001-63 </p>
+                 <p> Rodovia BA 430 - Shangrilá </p>
+           </div>
+              <div class="conteudo"> 
+                 <p class="titulo"> Acesse as nossas redes sociais: </p>
+                 <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
+                 <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram: lagoinhastore.lapa</a></p>
+                 <p> Contato: (77) 98851-7707</p>
+               </div> 
+               <div class="conteudo"> 
+                 <p class="titulo"> Acesso Rápido: </p>
+                 <p> Acessibilidade </p>
+                 <p> Temas </p>
+               </div>                 
+              </div>
+            </div>
+            
+        </footer>
+    
+    </body>
+    
+    </html>  

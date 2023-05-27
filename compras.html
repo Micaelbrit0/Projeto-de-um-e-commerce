@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Compras</title>
+    <link rel="stylesheet" href="./css/stylesCompras.css">
+    <link rel="icon" type="image/png" href="./img/logopassaro.png"/>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <a href="./index.html"><img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
+        </div>
+
+        <div>
+            <div id="butonCarrinho">
+                <div id="bus_but">
+                    <form action="">
+
+                        <input type="search" id="buscador" placeholder="Buscar no site..." />
+                        <button type="submit" id="button">Buscar</button>
+
+                    </form>
+                </div>
+
+                <figure>
+                    <a href=""><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px"
+                            height="45px"></a>
+                    <figure>
+            </div>
+            <nav>
+                <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
+                <ul>
+                    <li><a href="./mostruarioProdutos.html">Bíblias</a></li>
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Canecas</a></li>
+                    <li><a href="">Camisas</a></li>
+                    <li><a href="">Livros</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="cadastro_entrar">
+            <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
+            <ul>
+                <li><a class="cor" href="./cadastro.html"> Cadastro </a>|<a class="cor" href="./login.html"> Entrar</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-------------------------------------------------------------------------------------------------------------------->
+
+
+    <main>
+        <div class="usuario">
+            <div id="foto">
+                <img src="img/download.jpg" alt="Foto do perfil">
+                <p>Nome</p>
+
+            </div>
+            <br>
+
+
+            <div id="perfil">
+                <img src="img/usuario.png" alt="Usuário">
+                <a class="nomes" href="Dados_perfil.html">Minha conta</a>
+            </div>
+
+
+            <div id="compras">
+                <img src="img/compras.png" alt="Minhas compras">
+
+                <a class="nomes" href="minhascompras.">Minhas compras</a>
+            </div>
+
+            <div id="favoritos">
+                <img src="img/favorito.png" alt="Favoritos">
+                <a class="nomes" href="./Favoritos.html">Favoritos</a>
+            </div>
+
+        </div>
+
+
+        <div class="container">
+
+            <div id="campoTegs">
+                <button onclick="trocarTela()"">
+                    Finalizado
+                </button>
+                <button onclick="trocarTela()">
+                    A Caminho
+                </button>
+        
+               
+            </div>
+
+            <div id="produtos">
+
+                <div class="produto">
+                    <div class="prodCima">
+                        <div class="informacoes">
+            
+                            <div class="div_produto">
+                                <img style="width: 100px;height: 100px;" src="./img/produto1.jpg" alt="Foto do podruto">
+                            </div>
+
+                            <div class="nomeDesc">
+                                <p>Nome do produto</p>
+                                <p>Descrição</p>
+                                <p>x1</p>
+                            </div>
+                        </div>
+
+                        <div class="preco">
+                            <p>R$: 0,00</p>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div class="prodBaixo">
+                        <div class="totalPedido">
+                            <p>
+                                Total do Pedido:
+                            </p>
+                            <p>R$: 0,00</p>
+
+                        </div>
+                        <button id="butonComprar">Compra novamente</button>
+
+                    </div>
+            
+                </div>
+
+                <div class="produto">
+                    <div class="prodCima">
+                        <div class="informacoes">
+            
+                            <div class="div_produto">
+                                <img style="width: 100px;height: 100px;" src="./img/produto1.jpg" alt="Foto do podruto">
+                            </div>
+
+                            <div class="nomeDesc">
+                                <p>Nome do produto</p>
+                                <p>Descrição</p>
+                                <p>x1</p>
+                            </div>
+                        </div>
+
+                        <div class="preco">
+                            <p>R$: 0,00</p>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div class="prodBaixo">
+                        <div class="totalPedido">
+                            <p>
+                                Total do Pedido:
+                            </p>
+                            <p>R$: 0,00</p>
+
+                        </div>
+                        <button id="butonComprar">Compra novamente</button>
+
+                    </div>
+            
+
+                </div>
+
+                <div class="produto">
+                    <div class="prodCima">
+                        <div class="informacoes">
+            
+                            <div class="div_produto">
+                                <img style="width: 100px;height: 100px;" src="./img/produto1.jpg" alt="Foto do podruto">
+                            </div>
+
+                            <div class="nomeDesc">
+                                <p>Nome do produto</p>
+                                <p>Descrição</p>
+                                <p>x1</p>
+                            </div>
+                        </div>
+
+                        <div class="preco">
+                            <p>R$: 0,00</p>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div class="prodBaixo">
+                        <div class="totalPedido">
+                            <p>
+                                Total do Pedido:
+                            </p>
+                            <p>R$: 0,00</p>
+
+                        </div>
+                        <button id="butonComprar">Compra novamente</button>
+
+                    </div>
+            
+
+                </div>
+
+
+
+
+            </div>
+
+
+           
+
+            <div id="produtoComprados">
+
+                <div class="produto">
+                    <div class="prodCima">
+                        <div class="informacoes">
+            
+                            <div class="div_produto">
+                                <img style="width: 100px;height: 100px;" src="./img/produto1.jpg" alt="Foto do podruto">
+                            </div>
+
+                            <div class="nomeDesc">
+                                <p>Nome do produto</p>
+                                <p>Descrição</p>
+                                <p>x1</p>
+                            </div>
+                        </div>
+
+                        <div class="preco">
+                            <p>R$: 0,00</p>
+                        </div>
+
+
+                    </div>
+                    <hr>
+                    <div class="prodBaixo">
+                        <div class="totalPedido">
+                            <p>
+                               Previssão de entrega: 00/00/0000
+                            </p>
+                            
+
+                        </div>
+                        <button id="butonComprar">Rastreamento</button>
+
+                    </div>
+            
+                </div>
+
+            
+
+            </div>
+             
+        </div>
+        
+    </main>
+
+    <!-------------------------------------------------------------------------------------------------------------------->
+    <footer><!--Rodapé-->
+
+        <div id="footerContainer">
+            <div id="rodape">
+                <div class="conteudo">
+                    <p class="titulo"> Endereço: </p>
+                    <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
+                    <p> CNPJ: 49.998.717/0001-63 </p>
+                    <p> Rodovia BA 430 - Shangrilá </p>
+                </div>
+                <div class="conteudo">
+                    <p class="titulo"> Acesse as nossas redes sociais: </p>
+                    <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
+                    <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram:
+                            lagoinhastore.lapa</a></p>
+                    <p> Contato: (77) 98851-7707</p>
+                </div>
+                <div class="conteudo">
+                    <p class="titulo"> Acesso Rápido: </p>
+                    <p> Acessibilidade </p>
+                    <p> Temas </p>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

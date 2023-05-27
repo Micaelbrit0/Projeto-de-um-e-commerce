@@ -76,14 +76,14 @@
 
             <div id="perfil">
                 <img src="img/usuario.png" alt="Usuário">
-                <a class="nomes" href="Dados_perfil.html">Minha conta</a>
+                <a class="nomes" href="./Dados_perfil.html">Minha conta</a>
             </div>
 
 
             <div id="compras">
                 <img src="img/compras.png" alt="Minhas compras">
 
-                <a class="nomes" href="minhascompras.">Minhas compras</a>
+                <a class="nomes" href="./compras.html">Minhas compras</a>
             </div>
 
             <div id="favoritos">
@@ -97,81 +97,126 @@
 
 
         <div class="container">
-            <h1>Meu perfil</h1>
-            <hr id="linha">
-            <div class="dados" id="DivNomeUsuario">
-                <Label id="nomedeUsuario">Nome de Usuario</Label>
-                <p>NomedoUsario</p>
-            </div>
+            <div id="dadosDoUsario">
+                <h1>Meu perfil</h1>
+                <hr id="linha">
+               <div class="dados" id="DivNomeUsuario">
+                    <Label id="nomedeUsuario">Nome de Usuario</Label>
+                    <p>NomedoUsario</p>
+                </div>
 
-            <div class="dados" id="DivNome">
-                <Label id="nome">Nome</Label>
-                <input for="nome" id="nome">
-            </div>
+                <div class="dados" id="DivNome">
+                    <Label id="nome">Nome</Label>
+                    <input for="nome" id="nome">
+                </div>
 
-            <div class="dados" id="DivCPF">
-                <Label id="CPF">CPF</Label>
-                <p>***.****.****-**</p>
-            </div>
+                <div class="dados" id="DivCPF">
+                    <Label id="CPF">CPF</Label>
+                    <p>***.****.****-**</p>
+                </div>
 
-            <!-- fazer uma janela modal -->
 
-            <div class="dados" id="divEmail">
-                <Label id="email">Email</Label>
-                <p>xxx@gmail.com</p>
-                <button class="button" onclick="acao()">Trocar</button>
-                        <div class="modal">
-                            <div onclick="fechar()" class="fechar"><p>X</p></div>
-                            <div id="conteudoModal">
-                                <div class="dadosNovoEmail">
-                                    <label for="emailAntigo">Digite o antigo Email</label>
-                                    <input type="text" id="emailAntigo" required>
+                <div class="dados" id="divEmail">
+                    <Label id="email">Email</Label>
+                    <p>xxx@gmail.com</p>
+                    <button class="trocar" onclick="acao()">Trocar</button>
+                            <div class="modal">
+                                <div onclick="fechar()" class="fechar"><p>X</p></div>
+                                <div id="conteudoModal">
+                                        <div class="dadosNovoEmail">
+                                        <label for="emailAntigo">Digite o antigo Email</label>
+                                        <input type="text" id="emailAntigo" required="required">
+                                        </div>
+
+                                        <div class="dadosNovoEmail">
+                                                <label for="novoEmail">Digite o novo Email</label>
+                                                <input type="text" id="novoEmail"required="required">
+                                        </div>
+
+                                        <div class="dadosNovoEmail">
+                                            <label for="confnovoEmail">Confirme o email</label>
+                                            <input type="text" id="confnovoEmail" required="required">
+                                        </div>
+
+                                        <input type="submit" name="Salvar dados" value="Salvar dados" class="buttonEnviar">
                                     </div>
-
-                                <div class="dadosNovoEmail">
-                                            <label for="novoEmail">Digite o novo Email</label>
-                                            <input type="text" id="novoEmail" required>
-                                    </div>
-
-                                    <div class="dadosNovoEmail">
-                                        <label for="confnovoEmail">Confirme o email</label>
-                                        <input type="text" id="confnovoEmail" required>
-                                    </div>
-
-                                    <input type="submit" name="Salvar dados" value="Salvar dados" class="buttonEnviar">
                                 </div>
+                    </button>
+
+                </div>
+
+                <div class="dados" id="senha">
+                    <label>Senha:</label>
+                    <p>*******</p>
+                    <button class="trocar" onclick="acaoSenha()">Trocar</button>
+                    <div class="modalSenha">
+                        <div onclick="fecharSenha()" class="fechar"><p>X</p></div>
+
+                        <div id="conteudoModalSenha">
+                            <div class="dadosNovoSenha">
+                                <label for="senhaAntiga">Digite a antiga Senha</label>
+                                <input maxlength="8" minlength="0" type="password" name="Senha" required="required" placeholder="Senha" id="senha">
                             </div>
-                </button>
+        
+                            <div class="dadosNovoSenha">
+                                <label for="senhaNova">Digite a nova Senha</label>
+                                <input maxlength="8" minlength="0" type="password" name="Senha" required="required" placeholder="NovaSenha" id="senha">
+                            </div>
+
+                            <input type="submit" name="Salvar dados" value="Salvar dados" class="buttonEnviar">
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="dados" id="telefone">
+                    <Label id="tel">Numero do Telefone</Label>
+                    <p>(**)*******</p>
+                    <!--Fazer outra janela modal-->
+                    <button class="trocar" onclick="acaoTel()">Trocar</button>
+                    <div class="modalTel">
+                        <div onclick="fecharTel()" class="fechar"><p>X</p></div>
+                        <div id="conteudoModalTel">
+                            <div class="dadosNovoTel">
+                                <label for="novoTel">Digite o novo numero</label>
+                                <input type="number" id="novoTel" required="required" placeholder="(**)****-***">
+                                </div>
+                                <input type="submit" name="Salvar dados" value="Salvar dados" class="buttonEnviar">
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="dados" id="genero"> 
+                    <label>Gênero:</label>
+                    <label> 
+                    <input class="circulo" type="radio" name=" Gênero" value="Feminino"> Feminino</label>
+                    <label><input class="circulo" type="radio" name=" Gênero" value="Masculino"> Masculino</label>
+                    <label><input class="circulo" type="radio" name=" Gênero" value="Outro"> Outro</label>
+                </div>
+                
+                <div class="dados" id="nasc">
+                    <label>Data de nascimento:</label>
+                    <input id="data" type="date" neme="Data de Nascimento" value="Data de Nascimento">
+                </div>
+
+                <div id="editar">
+                    <input type="submit" name="Salvar dados" value="Salvar dados">
+    
+                </div>
 
             </div>
-            
-            <div class="dados" id="telefone">
-                <Label id="tel">Numero do Telefone</Label>
-                <p>(**)*******</p>
-                <!--Fazer outra janela modal-->
+
+            <div id="novaFotoPerfil">
+              
+                <img id="imgCarrege" src="./img/download.jpg">
+                
+                <input type="file">
             </div>
 
-            <div class="dados" id="genero"> 
-                <label>Gênero:</label>
-                <label> 
-                <input class="circulo" type="radio" name=" Gênero" value="Feminino"> Feminino</label>
-                <label><input class="circulo" type="radio" name=" Gênero" value="Masculino"> Masculino</label>
-                <label><input class="circulo" type="radio" name=" Gênero" value="Outro"> Outro</label>
-            </div>
-            
-            <div>
-                <label>Data de nascimento:</label>
-                <input id="data" type="date" neme="Data de Nascimento" value="Data de Nascimento">
-            </div>
-
-
-
-            <div id="editar">
-                <input type="submit" name="Salvar dados" value="Salvar dados">
-
-            </div>
 
         </div>
+        
     </main>
 
     <!-------------------------------------------------------------------------------------------------------------------->

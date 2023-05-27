@@ -433,7 +433,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     background-color: rgb(36, 36, 36);
-    height: 100px;
+    height: auto;
     text-align: center;
     color: white;
     bottom: 0;

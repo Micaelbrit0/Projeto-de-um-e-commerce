@@ -161,13 +161,18 @@ main{
     gap: 10px;
 }
 
-#notificacao img {
+#favoritos {
+    display: flex;
+    gap: 10px;
+}
+
+#favoritos img {
     width: 30px;
     height: 30px;
 }
 
 .nomes {
-    color:black;
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
@@ -260,7 +265,8 @@ footer{
   display: flex;
   justify-content: space-between;
   width:100vw; 
-  width: auto;                               font-size: 13px;
+  width: auto;                               
+  font-size: 13px;
 }
 
 .conteudo{

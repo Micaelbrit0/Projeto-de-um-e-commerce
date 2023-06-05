@@ -244,6 +244,9 @@ main{
     border: none;
     border-radius: 10px 10px 10px 10px;
 }
+#comprar:hover{
+    cursor: pointer;
+}
 
  /*Aqui termina css do main*/
 

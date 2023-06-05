@@ -15,20 +15,21 @@
 
 <body>
     <header> 
-        <div>
+        <div> <!--div com a logo e olink para pagina inical-->
             <a href="./index.html"><img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
         </div>
             
         <div>
-            <div id="butonCarrinho">
+            <div id="butonCarrinho"><!-- div contendo o buscador e carrinho -->
                 <div id="bus_but">
-                    <form action="" >  
+                    <form action="" ><!-- div responsável pelo buscador, contém um fomulário, input e um button-->  
                                             
                         <input type="search" id="buscador" placeholder="Buscar no site..."/>
                         <button type="submit" id="button">Buscar</button>
                                     
-                    </form> 
-                </div> 
+                    </form>
+
+                </div> <!-- div respnsável pelo incone e o link do carrinho -->
         
                 <figure>
                     <a href="carrinho.html"><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
@@ -54,35 +55,50 @@
         
     </header>
     <main>
-        <div class="painel_carrinho">
-            <section id="section_um">
+        <div class="painel_carrinho"><!-- div de todo o painel-->
+            <section id="section_um"><!--primeira seção que fica vazia com finalidade apenas de desainer -->
                     <div ></div>
-            </section>  
-            <section id="section_dois">
-
-                <input type="checkbox" id="checkbox">
-                <div class="div_produto"><img style="width: 100px;height: 100px;" src="" alt="Foto do podruto">
-                </div><p class="nome_produto">Nome do produto</p><p class="nome_produto2">Descrição</p>
-                
-                <div id="buttonsQuant">
-                    <button id="increaseBtn">+</button>
-                    <input type="text" id="quantityInput" value="1" readonly>
-                    <button id="decreaseBtn">-</button>
-                </div><p id="preço">Preço R$</p>
-
-                
             </section>
-            <section id="section_tres"> 
-                    <div id="cupon"><img src="IMG/cupon.png" alt="cupon" width="30px"height="30px" id="img_cupon"><p id="nome_cupon">Cupons</p><p id="inserir_codigo">Insira o codigo</p><hr style=" margin-block-end: 20px; border-color:rgba(253, 158, 15, 1) ;">
+
+            <section id="section_dois"><!--segunda seção com os input checkbox button para de o usuário possa escolher o produto e a quantidade-->
+
+                <input type="checkbox" id="checkbox"><!--input dotipo checkbox para marcar o produto desejado-->
+                
+                <div class="div_produto"><!--div com a imagem doproduto-->
+                    <img style="width: 100px;height: 100px;" src="" alt="Foto do podruto">
+                </div>
+                
+                <p class="nome_produto">Nome do produto</p><p class="nome_produto2">Descrição</p>
+                
+                <div id="buttonsQuant"><!-- div com a função de escolher a quantidade-->
+
+                    <button id="increaseBtn">+</button>
+                    
+                    <input type="text" id="quantityInput" value="1" readonly>
+                    
+                    <button id="decreaseBtn">-</button>
+
+                </div>
+                
+                <p id="preço">Preço R$</p>
+               
+            </section>
+
+            <section id="section_tres"><!--terceira seção com as div do cu pom e de selecionar todo carrinho-->
+
+                    <div id="cupon"><!--div com funcionalidade de inserir cupon-->
+                        <img src="IMG/cupon.png" alt="cupon" width="30px"height="30px" id="img_cupon"><p id="nome_cupon">Cupons</p><p id="inserir_codigo">Insira o codigo</p><hr style=" margin-block-end: 20px; border-color:rgba(253, 158, 15, 1) ;">
                     </div>
-                    <div>         
-                        <div>
+
+                    <div><!--div com funcionalidade de selecionar todos os produtos do carrinho e também direciona para finalização da compra-->         
+                        <div><!--div responsavel por selecionar tudo do carrinho-->
                         <input type="checkbox" id="checkbox2"><p id="Selecione_tudo">Selecione Tudo</p><p id="Apagar">Apagar</p>
                         </div>
                      
-                         <div id="total_rs_button">
+                         <div id="total_rs_button"><!--div resposável por mostra o preço total e direcionar para finalização da compra-->
                         <p id="total">Total (0) Itens</p><p id="rs">R$0,000</p>
-                        <a href="./finalizarcompra.html"><button id="comprar">Comprar</button></a>
+                        <a href="./finalizarcompra.html">
+                            <button id="comprar">Comprar</button></a>
                         
                         </div>
                     </div>
@@ -93,28 +109,32 @@
 
     <footer><!--Rodaper-->
         
-        <div id="container">
+        <div id="container"><!--div com as divs que contém as informações do site-->
+
            <div id="rodape">
-               <div class="conteudo">
-                 <p class="titulo"> Endereço: </p>
-                 <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
-                 <p> CNPJ: 49.998.717/0001-63 </p>
-                 <p> Rodovia BA 430 - Shangrilá </p>
-           </div>
-              <div class="conteudo"> 
-                 <p class="titulo"> Acesse as nossas redes sociais: </p>
-                 <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
-                 <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram: lagoinhastore.lapa</a></p>
-                 <p> Contato: (77) 98851-7707</p>
-               </div> 
-               <div class="conteudo"> 
-                 <p class="titulo"> Acesso Rápido: </p>
-                 <p> Acessibilidade </p>
-                 <p> Temas </p>
+               
+                <div class="conteudo"><!--div com as informações de endereço-->
+                    <p class="titulo"> Endereço: </p>
+                    <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
+                    <p> CNPJ: 49.998.717/0001-63 </p>
+                    <p> Rodovia BA 430 - Shangrilá </p>
+                </div>
+
+                <div class="conteudo"><!--div com as informações para contato-->  
+                    <p class="titulo"> Acesse as nossas redes sociais: </p>
+                    <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
+                    <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram: lagoinhastore.lapa</a></p>
+                    <p> Contato: (77) 98851-7707</p>
                </div> 
                
-              </div>
-           </div>
+               <div class="conteudo"> <!--div com outras informações--> 
+                    <p class="titulo"> Acesso Rápido: </p>
+                    <p> Acessibilidade </p>
+                    <p> Temas </p>
+               </div> 
+               
+            </div>
+        </div>
            
        </footer>
    

@@ -14,26 +14,30 @@
 </head>
 
 <body>
-    <header> 
-        <div>
+    <header>
+
+        <div><!-- div responsável pela logo da página -->
             <a href="./index.html"><img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
         </div>
             
         <div>
-            <div id="butonCarrinho">
-                <div id="bus_but">
+            <div id="butonCarrinho"><!-- div contendo o buscador e carrinho -->
+                <div id="bus_but"><!-- div responsável pelo buscador, contém um fomulário, input e um button-->
                     <form action="" >  
                                             
                         <input type="search" id="buscador" placeholder="Buscar no site..."/>
                         <button type="submit" id="button">Buscar</button>
                                     
-                    </form> 
-                </div> 
+                    </form>
+
+                </div><!-- div respnsável pelo incone e o link do carrinho --> 
         
                 <figure>
-                    <a href="carrinho.html"><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras"></a>
+                    <a href="carrinho.html"><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
                 <figure>
+
             </div>
+            
             <nav>
             <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
                 <ul>
@@ -43,7 +47,8 @@
                     <li><a href="">Camisas</a></li>
                     <li><a href="">Livros</a></li>
                 </ul> 
-                </nav>
+            </nav>
+
         </div>
             
             <div id="cadastro_entrar">  <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
@@ -53,6 +58,7 @@
             </div>
         
     </header>
+
 
     <main>
         <section id="produto">
@@ -118,17 +124,36 @@
 
                     </div>
 
+                    <!--Aqui vão ficar as inf do produtos caso precise-->
+                    <div id="AddInfo">
+                        <div class="opcs">
+                            <p>Opção</p>
+
+                            <button class="opcaodaInfo"> opçao 01</button>
+                            <button class="opcaodaInfo"> opçao 02</button>
+                            <button class="opcaodaInfo"> opçao 03</button>
+                            
+                        </div>
+
+                        <div class="opcs">
+                            <p>Opção</p>
+
+                            <button class="opcaodaInfo"> opçao 01</button>
+                            <button class="opcaodaInfo"> opçao 02</button>
+                            <button class="opcaodaInfo"> opçao 03</button>
+                            
+                        </div>
+                    </div>
+
                     <div id="quantidade">
                         <p id="nomeQuant">Quantidade:</p>
                         <div id="buttonsQuant">
-                            <button id="increaseBtn">+</button>
-                            <input type="text" id="quantityInput" value="1" readonly>
                             <button id="decreaseBtn">-</button>
+                            <input type="text" id="quantityInput" value="1" readonly>
+                            <button id="increaseBtn">+</button>
                         </div>
 
                     </div>
-
-                    <div id="vazio"></div>
 
                     <div id="carrinho-compra">
                         <button id="boxCarrinho">
@@ -166,7 +191,7 @@
                 <div id="fotoComentario">
                     <div id="usuario">
                         <figure id="figPerfil">
-                            <img src="" alt="foto de perfil" id="perfil">
+                            <img src="./img/download.jpg" alt="foto de perfil" id="perfil">
                         </figure>
                         <p id="nomeDeUsuario">Nome de Usuario</p>
                     </div>
@@ -186,7 +211,7 @@
                 <div id="fotoComentario">
                     <div id="usuario">
                         <figure id="figPerfil">
-                            <img src="" alt="foto de perfil" id="perfil">
+                            <img src="./img/download.jpg" alt="foto de perfil" id="perfil">
                         </figure>
                         <p id="nomeDeUsuario">Nome de Usuario</p>
                     </div>
@@ -234,7 +259,9 @@
             </div>
         </div>
            
-       </footer>
+    </footer>
+
+    <script src="./js/scriptproduto.js"></script>
 
 
 

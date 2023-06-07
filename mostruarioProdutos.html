@@ -15,27 +15,30 @@
 
 <body>
 
-    <header> 
-        <div>
+    <header>
+
+        <div><!-- div responsável pela logo da página -->
             <a href="./index.html"><img src="IMG/logo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
-        </div>
         </div>
             
         <div>
-            <div id="butonCarrinho">
-                <div id="bus_but">
+            <div id="butonCarrinho"><!-- div contendo o buscador e carrinho -->
+                <div id="bus_but"><!-- div responsável pelo buscador, contém um fomulário, input e um button-->
                     <form action="" >  
                                             
                         <input type="search" id="buscador" placeholder="Buscar no site..."/>
                         <button type="submit" id="button">Buscar</button>
                                     
-                    </form> 
-                </div> 
+                    </form>
+
+                </div><!-- div respnsável pelo incone e o link do carrinho --> 
         
                 <figure>
-                    <a href="carrinho.html"><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras"></a>
+                    <a href="carrinho.html"><img id="carrinho" src="IMG/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
                 <figure>
+
             </div>
+            
             <nav>
             <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
                 <ul>
@@ -44,8 +47,9 @@
                     <li><a href="">Canecas</a></li>
                     <li><a href="">Camisas</a></li>
                     <li><a href="">Livros</a></li>
-                    </ul> 
-                </nav>
+                </ul> 
+            </nav>
+
         </div>
             
             <div id="cadastro_entrar">  <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
@@ -56,10 +60,10 @@
         
     </header>
 
-
     <main><!--resto-->
-        <div id="mostruario">
-            <div id="categoria">
+        <section id="mostruario">
+
+            <section id="categoria">
                 <div id="vazio"></div>
                 <div id="BoxCategoria">
                     <h2>Categoria</h2>
@@ -89,76 +93,102 @@
                         <p id="valorPreco"> R$ 0,00</p>
                       </div>
                 </div>
-            </div>
 
-            <div id="produtos">
+            </section>
+
+
+            <section id="produtos">
+                
                 <div id="BoxNomeProduto"> 
                     <h1>Nome do Produto</h1>
                 </div>
 
                 <div id="produtosMostruario">
 
-                    <div class="produto" onclick="window.location.href = 'produto.html';">
-                        <figure>
-                            <img src="" alt="foto do produto">
-                        </figure>
-                        <h3>nome do produto</h3>
-                        <h4>R$0,00</h4>
-                    </div>
+                    <a href="./produto.html">
+                        <div class="produto"> 
+                            <figure>
+                                <img src="./img/produto1.jpg" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                    </a>
+
+                    <a href="./produto.html">
+                        <div class="produto"> 
+                            <figure>
+                                <img src="./img/produto1.jpg" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                    </a>
                     
-                    <div class="produto" onclick="window.location.href = 'biblias.html';">
-                        <figure>
-                            <img src="" alt="foto do produto">
-                        </figure>
-                        <h3>nome do produto</h3>
-                        <h4>R$0,00</h4>
-                    </div> 
 
-                    <div class="produto" onclick="window.location.href = 'biblias.html';">
-                        <figure>
-                            <img src="" alt="foto do produto">
-                        </figure>
-                        <h3>nome do produto</h3>
-                        <h4>R$0,00</h4>
-                    </div> 
 
-                    <div class="produto" onclick="window.location.href = 'biblias.html';">
-                        <figure>
-                            <img src="" alt="foto do produto">
-                        </figure>
-                        <h3>nome do produto</h3>
-                        <h4>R$0,00</h4>
-                    </div> 
+                    <a href="./produto.html">
+                        <div class="produto"> 
+                            <figure>
+                                <img src="./img/produto1.jpg" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                    </a>
+                    
 
-                    <div class="produto" onclick="window.location.href = 'biblias.html';">
-                        <figure>
-                            <img src="" alt="foto do produto">
-                        </figure>
-                        <h3>nome do produto</h3>
-                        <h4>R$0,00</h4>
-                    </div> 
 
-                    <div class="produto" onclick="window.location.href = 'biblias.html';">
-                        <figure>
-                            <img src="" alt="foto do produto">
-                        </figure>
-                        <h3>nome do produto</h3>
-                        <h4>R$0,00</h4>
-                    </div> 
+                    <a href="./produto.html">
+                        <div class="produto"> 
+                            <figure>
+                                <img src="./img/produto1.jpg" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                    </a>
+                    
+                    <a href="./produto.html">
+                        <div class="produto"> 
+                            <figure>
+                                <img src="./img/produto1.jpg" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                    </a>
+                    
 
-                    <div class="produto" onclick="window.location.href = 'biblias.html';">
-                        <figure>
-                            <img src="" alt="foto do produto">
-                        </figure>
-                        <h3>nome do produto</h3>
-                        <h4>R$0,00</h4>
-                    </div> 
+
+                    <a href="./produto.html">
+                        <div class="produto"> 
+                            <figure>
+                                <img src="./img/produto1.jpg" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                    </a>
+                    
+
+
+                    <a href="./produto.html">
+                        <div class="produto"> 
+                            <figure>
+                                <img src="./img/produto1.jpg" alt="foto do produto">
+                            </figure>
+                            <h3>nome do produto</h3>
+                            <h4>R$0,00</h4>
+                        </div>
+                    </a>
+                    
                     
 
                 </div>
-            </div>
+            </section>
     
-        </div>
+        </section>
 
         
         

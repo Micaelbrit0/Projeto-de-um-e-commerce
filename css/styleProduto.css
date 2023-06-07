@@ -1,10 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
+/*Aqui inicia o css do header*/
+*{  
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-
-/*Aqui inicia o css do header*/
 header{
     display: flex;
     background-color: #252525;
@@ -64,22 +63,20 @@ a{
 #carrinho{
     margin-top: 20px;  
     margin-left: 20px;
-    width:45px;
-    height:45px;
 }
 #cadastro_entrar{ /*div principal de cadastro e login*/
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
+    margin-top: 30px;
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 25px; 
+    font-size: 20px; 
 }
 nav ul li a {
     display: inline-block;
     justify-content: center;
-    padding-left: 15px;
-    font-size: 25px;
+    padding: 30px;
+    font-size: 20px;
     text-decoration: none;  
 }
 nav ul {
@@ -87,8 +84,12 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;  
+    margin-left: -40px;  
 } 
+
+/*Aqui termina o css do header*/
+
+
 
 /*Aqui termina o css do header*/
 
@@ -100,21 +101,23 @@ body {
 /* Coloquei os elementos em coluna*/
 main{
     min-height: calc(100vh - 220px);
-    width: 100%;
-    display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
    
 }
+
+/* #produto{
+    width: 70vw;
+} */
+
+
 /* Fica os dois lados do produto(imagem e nome do produto) na deireção de linha*/
 #container{
-    width: 700px;
-    height: 500px;
+    width: auto;
+    height: auto;
     background: #FFFFFF;
-    border-radius: 41px;
     display: flex;
     flex-direction: row;
     margin: 20px;
@@ -122,7 +125,7 @@ main{
 }
 /* Peguei 4 pedaçõs da tela que foi dividida em 6*/
 #lado-esquerdo{
-    flex: 2;
+    flex: 3;
 }
 
 #produtoPrincipal figure{
@@ -135,8 +138,7 @@ main{
     
 }
 #fotoProdPrincipla{
-    border: 1px solid red;
-    width: 250px;
+    width: 300px;
     height: 250px;
     margin: 20px 0 10px 20px;
 
@@ -151,7 +153,6 @@ main{
 
 }
 .outrasImagens{
-    border: 1px solid red;
     width: 80px;
     height: 80px;
 }
@@ -191,7 +192,7 @@ color: red; /* cor do coração marcado */
 
 /* Dividir a tela em 6*/
 #lado-direito{
-    flex: 6;
+    flex: 5;
     padding-top: 20px;
 }
 
@@ -200,7 +201,7 @@ color: red; /* cor do coração marcado */
 }
 
 h1, h2{
-    text-align: center;
+    margin-left: 20px;
     font-size: 20px;
    
 }
@@ -229,25 +230,19 @@ ul{
     color: #FD9E0F;
 }
 
-#preco{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #boxPreco{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 30vw;
     height: 45px;
     background-color: #D9D9D9;
     border-radius: 14px;
+    margin: 20px;
 }
 
 p, label{
     font-size: 20px;
-    font-family: 'Graduate';
 }
 
 
@@ -264,14 +259,36 @@ p, label{
 input[type="text"]{
     width: 200px;
     height: 25px;
-    background-color: #D9D9D9;
-    border: none;
-    border-radius: 14px;
+    border: 1px solid #D9D9D9;
+
 } 
 /* Centraliza o texto do placeholder */
 input[type="text"]::placeholder {
     text-align: center; 
 }
+
+#AddInfo{
+    margin: 20px;
+}
+
+.opcs{
+    display: flex;
+    margin-bottom: 15px;
+}
+.opcaodaInfo {
+   margin: 5px;
+   width: 90px;
+    height: 25px;
+    border: 1px solid #D9D9D9;
+    background-color: white;
+}
+.opcaodaInfo.active{
+    border: 1px solid #FD9E0F;
+    cursor: pointer;
+}
+
+
+
 
 #quantidade{
     display: flex;
@@ -314,14 +331,14 @@ input[type="text"]::placeholder {
 
 }
 
-#vazio{
+#AddInfo{
     height: 100px;
 }
 
 #carrinho-compra{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: start;
     margin: 20px;
 }
 
@@ -336,19 +353,14 @@ input[type="text"]::placeholder {
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
+    margin-right: 20px;
 
 }
 
-#boxCarrinho img{
-    transition: 0.3s; /* Adiciona uma transição suave */
-}
-
-#boxCarrinho:hover img{
-content: url(/LagoinhaStore/img/CarrinhoAddbranco.png); /* Altera a imagem quando o mouse passar por cima */
-}
 
 #boxCompra{
-    border: 2px solid #252525;
+    background-color: #252525;
+    color: white;
     border-radius: 14px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -366,16 +378,15 @@ content: url(/LagoinhaStore/img/CarrinhoAddbranco.png); /* Altera a imagem quand
     margin: 5px;
 }
 #boxCarrinho:hover, #boxCompra:hover{
-    background-color: #252525;
-    color: white;
+    cursor: pointer;
 }
+
 
 /*CSS da descição*/
 #descricao{
-    width: 700px;
-    height: 300px;
+    width: 50vw;
+    height: auto;
     background-color: white;
-    border-radius: 41px;
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -396,10 +407,10 @@ hr{
     border-color: #FD9E0F; /* Definindo a cor da borda */
 }
 
-#comentarios{width: 700px;
-    height: 300px;
+#comentarios{
+    width: 50vw;
+    height: auto;
     background-color: white;
-    border-radius: 41px;
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -439,7 +450,6 @@ hr{
 }
 
 #perfil{
-    border: 1px solid;
     border-radius: 100%;
     margin: 20px;
     width: 50px;

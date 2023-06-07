@@ -87,7 +87,7 @@ nav ul {
     margin-left: -40px;  
 } 
 
-/*A qui termina o css do header*/
+/*Aqui termina o css do header*/
 
 
 
@@ -147,7 +147,7 @@ main{
 #produtos{
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: start;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -155,9 +155,9 @@ main{
 #produtosMostruario{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:start;
     align-items: center;
 }
 
@@ -184,6 +184,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     
   }
 
@@ -197,7 +198,7 @@ main{
     align-items: center;
     width: 150px;
     height: 150px;
-    border: 1px solid red;
+    
 }
 
 

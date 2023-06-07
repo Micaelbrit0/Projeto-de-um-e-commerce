@@ -1,3 +1,4 @@
+//Tela do Perfil
 
 // Assim que se click no butão o codigo css muda de none para block, assim a janela aparece
 function acao(){
@@ -54,6 +55,8 @@ function fecharSenha(){
 }
 
 
+//Tela de Favoritos
+
 function trocarTela() {
     let produto = document.querySelector('#produtos');
     let produtoComprado = document.querySelector('#produtoComprados');
@@ -78,8 +81,7 @@ function trocarTela() {
   
   // Adicionar evento de clique ao elemento #compraproduto
   let compraproduto = document.querySelector('#compraproduto');
-  compraproduto.addEventListener('click', trocartela);
-
+  compraproduto.addEventListener('click', trocarTela);
 
 
 //  Neste exemplo, a função trocartela() é modificada para alternar a exibição dos elementos #produtos e #produtoComprados com base na exibição atual de #produtos. Se #produtos estiver sendo exibido (display igual a 'block'), #produtos será ocultado e #produtoComprados será exibido. Caso contrário, #produtos será exibido e #produtoComprados será ocultado.
@@ -89,3 +91,14 @@ function trocarTela() {
 // Finalmente, adicionamos um ouvinte de evento de clique ao elemento #compraproduto para chamar a função trocartela() sempre que ele for clicado.
 
 // Dessa forma, ao carregar a página, #produtos será exibido e #produtoComprados estará oculto. Ao clicar em #compraproduto, ocorrerá a troca, onde #produtos será oculto e #produtoComprados será exibido. Subsequentemente, ao clicar novamente em #compraproduto, a exibição será alternada novamente.
+
+
+//Tela produtos 
+
+var buttons = document.getElementsByClassName("opcaodaInfo");
+
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+  });
+}

@@ -248,7 +248,8 @@ footer{
 #rodape{
   display: flex;
   justify-content: space-between;
-  width:100%;                                              font-size: 13px;
+  width:100%;                                              
+font-size: 13px;
 }
 
 .conteudo{

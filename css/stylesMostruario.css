@@ -29,9 +29,13 @@ a{
     color:#FFFFFF ;
 }
 
+#cabecalho{
+    flex-wrap: wrap;
+}
+
 #buscador{
-    height: 30px;
-    width: 500px;
+    height: 5vh;
+    width: 50vw;
     padding: 15px;
 }
 
@@ -78,6 +82,7 @@ nav ul li a {
     padding: 30px;
     font-size: 20px;
     text-decoration: none;  
+
 }
 nav ul {
     display: flex;
@@ -86,6 +91,10 @@ nav ul {
     align-items: center;
     margin-left: -40px;  
 } 
+
+#buttonMenu{
+    display: none;
+}
 
 /*Aqui termina o css do header*/
 
@@ -96,15 +105,11 @@ body{
 
 
 main{
-    flex: 6;
     padding: 30px;
     display: flex;
-    min-width: 100vh;
     gap:50px;
     flex-wrap: wrap;
     min-height: calc(100vh - 160px);
-
-
 }
 
 h1{
@@ -137,11 +142,11 @@ h4{
     display: flex;
     flex-direction: row;
     gap: 20px;
+
     
 }
 
-#categoria{
-    flex: 3.5;    
+#categoria{ 
     flex-wrap: wrap;
 }
 
@@ -150,7 +155,7 @@ h4{
 }
 
 #BoxCategoria, #BoxPreço{
-    width: 180px;
+    width: auto;
     height:50px;
     background:  #252525;
     text-align: center;
@@ -176,19 +181,20 @@ h4{
     flex-direction: column;
     align-items:start;
     gap: 15px;
-    flex-wrap: wrap;
+
 }
 
 #produtosMostruario{
-    display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
-    gap: 20px;
+    gap: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 #BoxNomeProduto{
-    width: 80vw;
-    height: 40px;
+    width: 100%;
+    height: auto;
     background-color: white;
     
 }
@@ -197,6 +203,105 @@ h4{
     width: 200px;
     height: 250px;
     background: #FFFFFF;
+}
+
+@media screen and (max-height: 927px) and (max-width: 700px){
+
+    nav ul li a {  
+        display: none;
+    }
+    #navMinCadastro{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100vw;
+        padding: 20px;
+    }
+
+
+
+    #buttonMenu{
+        margin-top: 30px;
+        display: block;
+        
+    }
+
+    #abriButton, #menuWhite{
+        background-color: #252525;
+        width: 5vw;
+        border: none;
+    }
+
+    #fecharMenu{
+        height: 100%;
+        width: 0%;
+        background-color: #252525;
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+        transition: all 0.5s;
+    }
+
+    #fechar{
+        color: white;
+    }
+    
+
+    #fechar{
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        font-size: 30px
+    }
+
+    #navButton{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+
+    }
+
+
+    #navButton a{
+        display: block;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 40px;
+        
+    }
+
+
+    #mostruario{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    
+        
+    }
+
+    .produto{
+        flex-direction: column;
+        width: 100px;
+        height: 150px;
+        background: #ffffff;
+    }
+
+    #mostruario img{
+        display: flex;
+        align-items: center;
+        width: 80px;
+        height: 90px;
+        
+    }
+    h3, h4{
+        font-size: 10px;
+    }
+    
+
 }
 
 .produto img{
@@ -212,12 +317,12 @@ h4{
     justify-content: center;
     margin-top: 20px;
     
-  }
+}
   
 .produto img {
     display: inline-block;
     margin-top: 20px;
-  }
+}
 
 .produto:hover{
     cursor: pointer;
@@ -256,8 +361,6 @@ label {
     cursor: pointer;
 }
 
-
-
   
 /* CSS DO RODAPE */
 footer{
@@ -265,7 +368,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     background-color: rgb(36, 36, 36);
-    height: 100px;
+    height: auto;
+    width: auto;
     text-align: center;
     color: white;
 }
@@ -284,6 +388,7 @@ footer{
 
 .conteudo{
   width: 250px;
+  padding: 10px;
 
   
 }

@@ -31,9 +31,12 @@ a{
 }
 
 #buscador{
-    height: 30px;
-    width: 500px;
+    height: 2vh;
+    width: 27vw;
     padding: 15px;
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 #button{
@@ -50,11 +53,7 @@ a{
     justify-content: center;
     
 }
-#buscador {
-    max-width: 650px;
-    font-size: 16px;
-    margin-top: 20px;
-}
+
 
 /*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
 #butonCarrinho{

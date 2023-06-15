@@ -30,9 +30,12 @@ a{
 }
 
 #buscador{
-    height: 30px;
-    width: 500px;
+    height: 2vh;
+    width: 27vw;
     padding: 15px;
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 #button{
@@ -49,15 +52,12 @@ a{
     justify-content: center;
     
 }
-#buscador {
-    max-width: 650px;
-    font-size: 16px;
-    margin-top: 20px;
-}
 
 /*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
 #butonCarrinho{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #carrinho{
@@ -74,9 +74,8 @@ a{
 }
 nav ul li a {
     display: inline-block;
-    justify-content: center;
     padding: 30px;
-    font-size: 20px;
+    font-size: 100%;
     text-decoration: none;  
 }
 nav ul {
@@ -94,15 +93,13 @@ nav ul {
 
 body {
     background-color: rgba(236, 228, 228, 1);
-    flex-wrap: wrap;
-
-
 }
 
 main {
     min-height: calc(100vh - 220px);
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -121,9 +118,6 @@ main {
 #foto {
     display: flex;
     gap: 10px;
-
-
-
 }
 
 #foto img {
@@ -142,9 +136,6 @@ main {
 #perfil {
     display: flex;
     gap: 10px;
-
-
-
 
 }
 
@@ -200,7 +191,6 @@ main {
 
 #container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     
 }
@@ -215,8 +205,8 @@ main {
 }
 
 #imgCarrege{
-    width: 150px;
-    height: 150px;
+    width: 10vw;
+    height: 20vh;
     border-radius: 100%;
 }
 #novaFotoPerfil input{
@@ -227,7 +217,9 @@ main {
     font-size: 15px;
    
 }
-
+#TodososDados{
+    flex-wrap: wrap;
+}
 
 #linha {
     width: auto;
@@ -239,6 +231,8 @@ main {
 .dados{
     margin: 10px;
     display: flex;
+    flex-wrap: wrap;
+
 }
 .dados label{
     font-size: 25px;
@@ -262,8 +256,6 @@ main {
 #genero input{
     width: 40px;
 }
-
-
 
 #data {
 
@@ -378,7 +370,7 @@ main {
 }
 input{
     height:30px;
-    width: 400px;
+    width: 20vw;
     border: 1px solid;
 }
 

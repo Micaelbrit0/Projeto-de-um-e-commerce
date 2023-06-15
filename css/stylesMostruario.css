@@ -8,8 +8,6 @@ header{
     display: flex;
     background-color: #252525;
     flex-direction: row;
-    width: auto;
-    height: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;  
 }
@@ -29,14 +27,13 @@ a{
     color:#FFFFFF ;
 }
 
-#cabecalho{
-    flex-wrap: wrap;
-}
-
 #buscador{
-    height: 5vh;
-    width: 50vw;
+    height: 2vh;
+    width: 27vw;
     padding: 15px;
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 #button{
@@ -53,15 +50,12 @@ a{
     justify-content: center;
     
 }
-#buscador {
-    max-width: 650px;
-    font-size: 16px;
-    margin-top: 20px;
-}
 
 /*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
 #butonCarrinho{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #carrinho{
@@ -82,7 +76,6 @@ nav ul li a {
     padding: 30px;
     font-size: 20px;
     text-decoration: none;  
-
 }
 nav ul {
     display: flex;
@@ -92,11 +85,8 @@ nav ul {
     margin-left: -40px;  
 } 
 
-#buttonMenu{
-    display: none;
-}
-
 /*Aqui termina o css do header*/
+
 
    
 body{
@@ -205,104 +195,7 @@ h4{
     background: #FFFFFF;
 }
 
-@media screen and (max-height: 927px) and (max-width: 700px){
 
-    nav ul li a {  
-        display: none;
-    }
-    #navMinCadastro{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width:100vw;
-        padding: 20px;
-    }
-
-
-
-    #buttonMenu{
-        margin-top: 30px;
-        display: block;
-        
-    }
-
-    #abriButton, #menuWhite{
-        background-color: #252525;
-        width: 5vw;
-        border: none;
-    }
-
-    #fecharMenu{
-        height: 100%;
-        width: 0%;
-        background-color: #252525;
-        z-index: 9;
-        position: fixed;
-        left: 0;
-        top: 0;
-        overflow-x: hidden;
-        transition: all 0.5s;
-    }
-
-    #fechar{
-        color: white;
-    }
-    
-
-    #fechar{
-        position: absolute;
-        top: 25px;
-        right: 45px;
-        font-size: 30px
-    }
-
-    #navButton{
-        display: flex;
-        justify-content: center;
-        margin-top: 100px;
-
-
-    }
-
-
-    #navButton a{
-        display: block;
-        padding: 10px;
-        margin-top: 10px;
-        font-size: 40px;
-        
-    }
-
-
-    #mostruario{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        flex-wrap: wrap;
-    
-        
-    }
-
-    .produto{
-        flex-direction: column;
-        width: 100px;
-        height: 150px;
-        background: #ffffff;
-    }
-
-    #mostruario img{
-        display: flex;
-        align-items: center;
-        width: 80px;
-        height: 90px;
-        
-    }
-    h3, h4{
-        font-size: 10px;
-    }
-    
-
-}
 
 .produto img{
     display: flex;

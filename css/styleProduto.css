@@ -30,9 +30,12 @@ a{
 }
 
 #buscador{
-    height: 30px;
-    width: 500px;
+    height: 2vh;
+    width: 27vw;
     padding: 15px;
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 #button{
@@ -49,15 +52,13 @@ a{
     justify-content: center;
     
 }
-#buscador {
-    max-width: 650px;
-    font-size: 16px;
-    margin-top: 20px;
-}
+
 
 /*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
 #butonCarrinho{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #carrinho{
@@ -110,8 +111,6 @@ main{
 
 /* Fica os dois lados do produto(imagem e nome do produto) na deireção de linha*/
 #container{
-    width: auto;
-    height: auto;
     background: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -119,9 +118,7 @@ main{
     flex-wrap: wrap;
 }
 /* Peguei 4 pedaçõs da tela que foi dividida em 6*/
-#lado-esquerdo{
-    flex: 3;
-}
+
 
 #produtoPrincipal figure{
     display: flex;
@@ -133,8 +130,8 @@ main{
     
 }
 #fotoProdPrincipla{
-    width: 300px;
-    height: 250px;
+    width: 25vw;
+    height:300px;
     margin: 20px 0 10px 20px;
 
 }
@@ -148,7 +145,7 @@ main{
 
 }
 .outrasImagens{
-    width: 80px;
+    width: 5vw;
     height: 80px;
 }
 
@@ -161,6 +158,7 @@ main{
     display: flex;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 30px;
 
 }
 
@@ -168,16 +166,15 @@ main{
     font-size: 15px;
    
 }
-.coracao {
+
+.coracao{
 font-size: 20px; /* tamanho do coração */
 color: gray; /* cor do coração desmarcado */
 cursor: pointer;
 margin-left: 40px;
-
-
 }
   
-input[type="checkbox"] {
+input[type="checkbox"]{
 display: none; /* esconde a checkbox padrão */
 }
   
@@ -187,8 +184,8 @@ color: red; /* cor do coração marcado */
 
 /* Dividir a tela em 6*/
 #lado-direito{
-    flex: 5;
     padding-top: 20px;
+    margin-right: 20px;
 }
 
 #texNomeProd{
@@ -197,7 +194,7 @@ color: red; /* cor do coração marcado */
 
 h1, h2{
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 150%;
    
 }
 
@@ -211,6 +208,7 @@ ul{
     padding-left: 40px;
     font-size: 25px;
     color: #D9D9D9;
+    flex-wrap: wrap;
  }
  /* "\2606" para representar uma estrela vazia e "\2605" para uma estrela preenchida. Utilizamos o seletor ::before para adicionar o caractere antes do conteúdo de cada item da lista.*/
 
@@ -236,7 +234,7 @@ ul{
 }
 
 p, label{
-    font-size: 20px;
+    font-size: 100%;
 }
 
 
@@ -320,9 +318,6 @@ input[type="text"]::placeholder {
 
 }
 
-#AddInfo{
-    height: 100px;
-}
 
 #carrinho-compra{
     display: flex;
@@ -337,7 +332,6 @@ input[type="text"]::placeholder {
 
 #boxCarrinho{
     display: flex;
-    border: 2px solid #252525;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -357,7 +351,6 @@ input[type="text"]::placeholder {
 #comprar{
     text-align: center;
     padding-top: 5px;
-    justify-content: center;
     padding-bottom: 5px;
 }
 
@@ -370,16 +363,11 @@ input[type="text"]::placeholder {
     cursor: pointer;
 }
 
-#container2{
-    width: 770px;
-    flex-wrap: wrap;
-}
 
 
 /*CSS da descição*/
 #descricao{
-    width:auto;
-    height: auto;
+    width:47vw;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -402,14 +390,12 @@ hr{
 }
 
 #comentarios{
-    width: auto;
-    height: auto;
+    width:47vw;
     background-color: white;
     display: flex;
     flex-direction: column;
     margin: 20px;
     padding: 30px;
-    flex-wrap: wrap;
 
 }
 
@@ -417,11 +403,13 @@ hr{
     margin: 5px;
     font-size: 20px;
     text-align: left;
+
 }
 
 #usuario{
     display: flex;
     flex-direction: column;
+    
 }
 
 #nomeDeUsuario{
@@ -429,12 +417,13 @@ hr{
     text-align: center;
     margin-top:-10px ;
 
-    
 }
+
 
 #fotoComentario{
     display: flex;
     margin-bottom: 5px;
+    flex-wrap: wrap;
 }
 
 #figPerfil{
@@ -446,8 +435,8 @@ hr{
 #perfil{
     border-radius: 100%;
     margin: 20px;
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 10vh;
 }
 
 #fotoComentario{

@@ -135,6 +135,7 @@ main{
     width: 60.8%;
     flex-wrap: wrap;
     margin-bottom: 60px; 
+    margin-top: 30px;
 }
 
 #produtos{
@@ -147,7 +148,7 @@ main{
 #produtosMostruario{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:start;
     align-items: center;
     gap: 30px;
 }

@@ -74,29 +74,57 @@
 
                     <!--Vai ser necessário fazer uma função em js para quando alterar a opção mudar o display no css -->
 
-                    <div id="dados_end"> 
-                        <div class="dados">
-                            <p> Maria Vitória Sousa (77) 00000-0000</p>
-                        </div>
-                        <div class="dados"> 
-                            <p> Rua Santa Isabel, Joao Paulo II, n° 06, 47600-000 </p>
-                        </div>
-                        <div class="dados">
-                            <button id="trocar"> Trocar </button>
-                            <!--Fazer uma janela Modal-->
+                    <div id="troca1">
+                        <div id="dados_end"> 
+                    
+                            <div class="dados">
+                                <p> Maria Vitória Sousa (77) 00000-0000</p>
+                            </div>
+                            <div class="dados"> 
+                                <p> Rua Santa Isabel, Joao Paulo II, n° 06, 47600-000 </p>
+                            </div>
+                            <div class="dados">
+                                <button id="trocar" onclick="acao()"> Trocar </button>
+                                <div id="modal">
+                                    <div onclick="fechar()" id="fechar"><p>X</p></div>
+        
+                                    <div id="conteudoModal">
+                                        <div id="dadosNovo">
+                                            <label id="endereco">Digite o novo endereço</label>
+                                            
+                                            <input type="text" id="cidade" required="required" placeholder="Cidade">
+
+                                            <input type="number" id="CEP" required="required" placeholder="CEP">
+
+                                            <input type="text"id="rua" required="required" placeholder="Rua">
+                                                
+                                            <div id="bairroN">
+                                                <input type="text" id="bairro" required="required" placeholder="Bairro">
+
+                                                <input type="number" id="numero" required="required" placeholder="Número">
+                                            </div>
+                                        </div>
+        
+        
+                                        <input type="submit" name="Salvar dados" value="Salvar dados" id="buttonEnviar">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-
-                    <div id="dados_entrega"> 
-                        <div class="dados">
-                            <p> Igreja Batista Lagoinha - Bom Jesus da Lapa (77) 00000-0000</p>
-                        </div>
-                        <div class="dados"> 
-                            <p> Rodovia BA 430 - Shangrilá </p>
-                        </div>
-                        <div class="dados" id="aviso">
-                            <p>Assim que o pagamento for confirmado, aguardar o produto ficar pronto para retirada</p>
+                    <div id="troca2">  
+                        <div id="dados_entrega"> 
+                  
+                            <div class="dados">
+                                <p> Igreja Batista Lagoinha - Bom Jesus da Lapa (77) 00000-0000</p>
+                            </div>
+                            <div class="dados"> 
+                                <p> Rodovia BA 430 - Shangrilá </p>
+                            </div>
+                            <div class="dados" id="aviso">
+                                <p>Assim que o pagamento for confirmado, aguardar o produto ficar pronto para retirada</p>
+                            </div>
                         </div>
                     </div>
 
@@ -202,6 +230,8 @@
             </div>
             
         </footer>
+        <script src="./js/scriptFinalProduto.js"></script>
+
     
     </body>
     

@@ -14,7 +14,7 @@ header{
     flex-wrap: wrap;  
 }
 #logolagoinha{
-    width: 150px;
+    width: 11.4vw;
     margin-top: -20px;
 }
 
@@ -30,8 +30,9 @@ a{
 }
 
 #buscador{
-    height: 30px;
-    width: 500px;
+    font-size: 16px;
+    width: 27vw;
+    height: 2vh;
     padding: 15px;
 }
 
@@ -42,19 +43,11 @@ a{
     background-color:rgba(253, 158, 15, 1) ;
     border: none;
     border-radius: 0px  4px 4px 0px ;
-    cursor: pointer;
 }
 #bus_but{/*div principal do buscador*/
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
-#buscador {
-    max-width: 650px;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
 /*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
 #butonCarrinho{
     display: flex;
@@ -108,6 +101,7 @@ main{
     height: auto;
     text-align: center;
     justify-content: center;
+
 }
 .categorias  {/*estiliza a div que conten div com os icones de categoria*/
     display: flex;
@@ -122,8 +116,7 @@ main{
 
 #div_cate{ /*Div categoria*/
     width: 60.8%;
-    margin: 30px;
-    padding: 10px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,26 +132,24 @@ main{
     flex-direction: column;
     align-items:center;
     justify-content:center;
-    width: 63%;
+    width: 60.8%;
     flex-wrap: wrap;
-    margin-bottom: 60px;   
+    margin-bottom: 60px; 
 }
 
 #produtos{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    gap: 10px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 #produtosMostruario{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    display: flex;
-    justify-content:start;
+    justify-content:space-between;
     align-items: center;
+    gap: 30px;
 }
 
 #BoxNomeProduto{
@@ -177,28 +168,24 @@ main{
 .produto figure {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
   
 .produto img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    
+    margin-top: 20px;  
   }
 
 .produto:hover{
     cursor: pointer;
-    
 }
 
 .produto img{
     display: flex;
     align-items: center;
     width: 150px;
-    height: 150px;
-    
+    height: 150px;  
 }
 
 

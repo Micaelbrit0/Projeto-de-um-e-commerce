@@ -3,7 +3,7 @@
 // Assim que se click no butão o codigo css muda de none para block, assim a janela aparece
 function acao(){
 
-    let modal = document.querySelector('.modal')
+    let modal = document.querySelector('#modalEmail')
 
 
     modal.style.display = 'block';
@@ -12,7 +12,7 @@ function acao(){
 // Assim que se click no butão o x css muda de block para none, assim a janela some
 function fechar(){
 
-    let modal = document.querySelector('.modal')
+    let modal = document.querySelector('#modalEmail')
 
 
     modal.style.display = 'none';
@@ -21,7 +21,7 @@ function fechar(){
 
 function acaoTel(){
 
-    let modal = document.querySelector('.modalTel')
+    let modal = document.querySelector('#modalTel')
 
 
     modal.style.display = 'block';
@@ -29,7 +29,7 @@ function acaoTel(){
 
 function fecharTel(){
 
-    let modal = document.querySelector('.modalTel')
+    let modal = document.querySelector('#modalTel')
 
 
     modal.style.display = 'none';
@@ -39,7 +39,7 @@ function fecharTel(){
 
 function acaoSenha(){
 
-    let modal = document.querySelector('.modalSenha')
+    let modal = document.querySelector('#modalSenha')
 
 
     modal.style.display = 'block';
@@ -47,7 +47,7 @@ function acaoSenha(){
 
 function fecharSenha(){
 
-    let modal = document.querySelector('.modalSenha')
+    let modal = document.querySelector('#modalSenha')
 
 
     modal.style.display = 'none';
@@ -68,37 +68,69 @@ function trocarTela() {
       produto.style.display = 'block';
       produtoComprado.style.display = 'none';
     }
-  }
-  
-  // Definir a exibição inicial dos elementos
-  window.addEventListener('DOMContentLoaded', function() {
-    let produto = document.querySelector('#produtos');
-    let produtoComprado = document.querySelector('#produtoComprados');
-  
-    produto.style.display = 'block';
-    produtoComprado.style.display = 'none';
-  });
-  
-  // Adicionar evento de clique ao elemento #compraproduto
-  let compraproduto = document.querySelector('#compraproduto');
-  compraproduto.addEventListener('click', trocarTela);
-
-
-//  Neste exemplo, a função trocartela() é modificada para alternar a exibição dos elementos #produtos e #produtoComprados com base na exibição atual de #produtos. Se #produtos estiver sendo exibido (display igual a 'block'), #produtos será ocultado e #produtoComprados será exibido. Caso contrário, #produtos será exibido e #produtoComprados será ocultado.
-
-// Além disso, usamos o evento DOMContentLoaded para garantir que a exibição inicial dos elementos seja definida corretamente quando a página é carregada. Definimos #produtos como block e #produtoComprados como none para atender aos requisitos iniciais.
-
-// Finalmente, adicionamos um ouvinte de evento de clique ao elemento #compraproduto para chamar a função trocartela() sempre que ele for clicado.
-
-// Dessa forma, ao carregar a página, #produtos será exibido e #produtoComprados estará oculto. Ao clicar em #compraproduto, ocorrerá a troca, onde #produtos será oculto e #produtoComprados será exibido. Subsequentemente, ao clicar novamente em #compraproduto, a exibição será alternada novamente.
-
-
-//Tela produtos 
-
-var buttons = document.getElementsByClassName("opcaodaInfo");
-
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-  });
 }
+  
+
+
+function mudarTema(){
+  let cabecalho = document.querySelector("header")
+  cabecalho.style.backgroundColor = "black"
+
+  let rodape = document.querySelector("footer")
+  rodape.style.backgroundColor= "black"
+
+  let fundo = document.querySelector("body")
+  fundo.style.backgroundColor = "#262626"
+
+  let divproduto = document.querySelector("#dadosDoUsario")
+  divproduto.style.backgroundColor = "black"
+
+  let titulos = document.querySelector("h1")
+  titulos.style.color = "white"
+
+  let titulos2 = document.querySelectorAll("h2")
+  for (var i = 0; i < titulos2.length; i++) {
+    titulos2[i].style.color = 'white';
+  }
+
+  let letras = document.querySelectorAll("label")
+  for (var i = 0; i < letras.length; i++) {
+      letras[i].style.color = 'white';
+  }
+
+  let letrasP = document.querySelectorAll("p")
+  for (var i = 0; i < letrasP.length; i++) {
+    letrasP[i].style.color = 'white';
+  }
+
+  let links = document.querySelectorAll(".nomes")
+  for (var i = 0; i < links.length; i++) {
+    links[i].style.color = 'white';
+  }
+
+  let janelaModal = document.querySelectorAll(".modal")
+  for (var i = 0; i <  janelaModal.length; i++) {
+    janelaModal[i].style.backgroundColor = "black"
+  }
+
+  let corInput = document.querySelectorAll(".inputDados")
+  for (var i = 0; i < corInput.length; i++) {
+    corInput[i].style.backgroundColor = "black"
+
+  }
+  let corBordaInput = document.querySelectorAll(".inputDados")
+  for (var i = 0; i < corBordaInput.length; i++) {
+    corInput[i].style.border = "1px solid white"
+  }
+
+  let botao = document.querySelectorAll(".trocar")
+  for (var i = 0; i < botao.length; i++) {
+      botao[i].style.backgroundColor = "black";
+  }
+
+}
+
+
+
+
+

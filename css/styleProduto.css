@@ -337,6 +337,7 @@ input[type="text"]::placeholder {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
     margin-right: 20px;
+    padding: 10px;
 
 }
 
@@ -346,19 +347,9 @@ input[type="text"]::placeholder {
     color: white;
     border-radius: 14px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
 }
 
-#comprar{
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#adicionar, #comprar{
-    font-size: 15px;
-    cursor: pointer;
-    margin: 5px;
-}
 #boxCarrinho:hover, #boxCompra:hover{
     cursor: pointer;
 }
@@ -459,7 +450,18 @@ footer{
 #containeRodape {
     display: flex;
     flex-wrap: wrap;
-  }
+}
+#tema{
+    background-color: #252525;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+
+#tema:hover {
+    cursor: pointer;
+
+}
   
 #rodape{
   display: flex;

@@ -98,7 +98,7 @@ nav ul {
     /*espaçamento entre linhas*/
     font-size: 25px;
     margin-top: 50px;
-    width: 35vh;
+    width: 40vh;
 
 }
 
@@ -266,7 +266,20 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
-  }
+}
+
+#tema{
+    background-color: #252525;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+
+#tema:hover {
+    cursor: pointer;
+
+}
+  
   
 #rodape{
   display: flex;

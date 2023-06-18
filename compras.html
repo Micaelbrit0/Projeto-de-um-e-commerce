@@ -61,7 +61,7 @@
 
 
     <main>
-        <div id="usuario">
+        <section id="usuario">
             <div id="foto">
                 <img src="img/download.jpg" alt="Foto do perfil">
                 <p>Nome</p>
@@ -72,14 +72,14 @@
 
             <div id="perfil">
                 <img src="img/usuario.png" alt="Usuário">
-                <a class="nomes" href="Dados_perfil.html">Minha conta</a>
+                <a class="nomes" href="./Dados_perfil.html">Minha conta</a>
             </div>
 
 
             <div id="compras">
                 <img src="img/compras.png" alt="Minhas compras">
 
-                <a class="nomes" href="minhascompras.">Minhas compras</a>
+                <a class="nomes" href="./compras.html">Minhas compras</a>
             </div>
 
             <div id="favoritos">
@@ -87,16 +87,17 @@
                 <a class="nomes" href="./Favoritos.html">Favoritos</a>
             </div>
 
-        </div>
+        </section>
+
 
 
         <div id="container">
 
             <div id="campoTegs">
-                <button onclick="trocarTela()">
+                <button class="troca" onclick="trocarTela1()">
                     Finalizado
                 </button>
-                <button onclick="trocarTela()">
+                <button class="troca" onclick="trocarTela2()">
                     a caminho
                 </button>
         
@@ -290,17 +291,18 @@
                 <div class="conteudo">
                     <p class="titulo"> Acesso Rápido: </p>
                     <p> Acessibilidade </p>
-                    <p> Temas </p>
+                    <button id="tema" onclick="mudarTema()">Tema</button>
                 </div>
 
             </div>
         </div>
 
     </footer>
-    <script src="./js/scriptUsuario.js"></script>
+    <script src="./js/scriptCompas.js"></script>
 
 
 
 </body>
+
 
 </html>

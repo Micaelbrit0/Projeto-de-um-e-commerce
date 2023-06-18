@@ -191,14 +191,14 @@ main {
     align-items: center;
     margin-bottom: 20px;
 }
-#campoTegs button{
+.troca{
     margin-left: 30px;
     font-size: 25px;
     border: none;
     background-color: white;
 }
 
-#campoTegs button:hover{
+.troca:hover{
     color: rgba(253, 158, 15, 1);
     cursor: pointer;
 }
@@ -281,9 +281,8 @@ main {
 #butonComprar{
     width: 130px;
     height: 40px;
-    background-color: black;
+    background-color: #252525;
     color: white;
-    border: none;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -319,6 +318,18 @@ footer {
     justify-content: space-between;
     width: 100vw;
     font-size: 13px;
+}
+
+#tema{
+    background-color: #252525;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+
+#tema:hover {
+    cursor: pointer;
+
 }
 
 .conteudo {

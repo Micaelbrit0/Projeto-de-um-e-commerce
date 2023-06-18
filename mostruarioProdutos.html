@@ -89,9 +89,10 @@
                         <h2>Preço</h2>
                     </div>
                     <div id="preco">
-                        <input type="range" min="0" max="100" value="50" class="barra" id="mudancaDePreco">
-                        <p id="valorPreco"> R$ 0,00</p>
+                        <input type="range" min="20" max="100" value="20" id="barra">
+                       <p id="valor">R$ <span id="valorpreco"></span></p> 
                       </div>
+                </div>
                 </div>
 
             </section>
@@ -213,7 +214,7 @@
                <div class="conteudo"> 
                  <p class="titulo"> Acesso Rápido: </p>
                  <p> Acessibilidade </p>
-                 <p> Temas </p>
+                 <button id="tema" onclick="mudarTema()">Tema</button>
                </div> 
                
               </div>
@@ -221,7 +222,7 @@
            
        </footer>
 
-       <script src="./js/scriptproduto.js"></script>
+       <script src="./js/scripMonstruario.js"></script>
 
 </body>
 

@@ -237,7 +237,7 @@ footer{
   display: flex;
   justify-content: space-between;
   width:100%;                                              
-font-size: 13px;
+  font-size: 13px;
 }
 
 .conteudo{
@@ -255,4 +255,14 @@ font-size: 13px;
 .redesocial{
     color: white; 
     text-decoration: none; 
+}
+#tema{
+    background-color: #252525;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+
+#tema:hover {
+    cursor: pointer;
 }

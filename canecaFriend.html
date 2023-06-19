@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caneca</title>
+    <link rel="stylesheet" href="./css/styleProduto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="./img/logopassaro.png"/>
+ 
+    
+</head>
+
+<body>
+    <header>
+
+        <div><!-- div responsável pela logo da página -->
+            <a href="./index.html"><img src="./img/LagoinhaLogo.png" alt="Logo lagoinha store" id="logolagoinha"></a>
+        </div>
+            
+        <div>
+            <div id="butonCarrinho"><!-- div contendo o buscador e carrinho -->
+                <div id="bus_but"><!-- div responsável pelo buscador, contém um fomulário, input e um button-->
+                    <form action="" >  
+                                            
+                        <input type="search" id="buscador" placeholder="Buscar no site..."/>
+                        <button type="submit" id="button">Buscar</button>
+                                    
+                    </form>
+
+                </div><!-- div respnsável pelo incone e o link do carrinho --> 
+        
+                <figure>
+                    <a href="carrinho.html"><img id="carrinho" src="./img/carrinho.png" alt="carrinho de compras" width="45px" height="45px"></a>
+                <figure>
+
+            </div>
+            
+            <nav>
+            <!--Nav com as opções de áreas especificas e seus respectivos direcionamentos #Micael#-->
+                <ul>
+                    <li><a href="./mostruariobiblias.html">Bíblias</a></li>
+                    <li><a href="mostruarioacessorios.html">Acessórios</a></li>
+                    <li><a href="./mostruariocanecas.html">Canecas</a></li>
+                    <li><a href="./mostruariocamisas.html">Camisas</a></li>
+                    <li><a href="./mostruariolivros.html">Livros</a></li>
+                </ul> 
+            </nav>
+
+        </div>
+            
+            <div id="cadastro_entrar">  <!--Nav responsável para direcionar o usuário para área de cadastro ou de login #Micael#-->
+                <ul>
+                <li><a class="cor" href="./cadastro.html"> Cadastro </a>|<a class="cor" href="./login.html"> Entrar</a></li>
+                </ul>
+            </div>
+        
+    </header>
+
+
+    <main>
+        <section id="produto">
+            <div id="container">
+                <div id="lado-esquerdo">
+
+                    <div class="itens">
+
+                        <div id="produtoPrincipal">
+                            <figure>
+                                <img src="./img/produtos/caneca6.jpg" alt="foto do produto Caneca Friends" id="fotoProdPrincipla">
+                            </figure>
+                        </div>
+
+                        <div id="imagens">
+                            <div class="imagem">
+                                <figure>
+                                    <img src="./img/produtos/caneca6.jpg" alt="foto do produto Caneca Friends" class="outrasImagens">
+                                </figure>
+
+                            </div>
+                            <div class="imagem">
+                                <figure>
+                                    <img src="./img/produtos/caneca6.jpg" alt="foto do produto Caneca Friends" class="outrasImagens">
+                                </figure>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="favoritar">
+                        <input type="checkbox" id="coracao">
+                        <label for="coracao" class="coracao">&#10084;</label>
+                        <p id="nomeFav">Favoritar</p>
+                    </div>
+
+                </div>
+                    <!-- Aqui começa o lado direito da div -->
+                <div id="lado-direito">
+                    <div id="texNomeProd">
+                        <h1>Caneca Friends</h1>
+                    </div>
+    
+                    <ul class="checklist">
+                        <li class="checked"></li>
+                        <li class="checked"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+                    <div id="preco">
+                        <div id="boxPreco">
+                            <p>R$ 15,00</p>
+                        </div>
+                    </div>
+
+                    <div id="frete">
+                        <form>
+                            <label for="calFrete" id="labelFrete">Frete</label>
+                            <input type="text"id="calFrete" name="calFrete" placeholder="Digite seu CEP" min="8" >
+                        </form>
+
+                    </div>
+
+                    <!--Aqui vão ficar as inf do produtos caso precise-->
+    
+
+                    <div id="quantidade">
+                        <p id="nomeQuant">Quantidade:</p>
+                        <div id="buttonsQuant">
+                           <button id="increaseBtn">+</button> 
+                            <input type="text" id="quantityInput" value="1" readonly>
+                            <button id="decreaseBtn">-</button>
+                        </div>
+
+                    </div>
+
+                    <div id="carrinho-compra">
+                        <button id="boxCarrinho">
+                            <img src="./img/CarrinhoAdd.png" alt="carrinhoCompas" id="carrinhobuton">
+                            Adicionar ao carrinho
+                        </button>
+
+                        <button id="boxCompra">
+                            Comprar agora
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <div id="container2">
+            <section id="descricao">
+                <h2 id="nome-descricao">Descrição do produto</h2>
+                <hr>
+                <p>Caneca Friends.</p>
+
+
+            </section>
+
+            <section id="comentarios">
+                <div id="avaliacao">
+                    <h2 id="nome-avaliacao">Avaliação</h2>
+                    <hr>
+                    <div id="fotoComentario">
+                        <div id="usuario">
+                            <figure id="figPerfil">
+                                <img src="./img/download.jpg" alt="foto de perfil" id="perfil">
+                            </figure>
+                            <p id="nomeDeUsuario">Nome de Usuario</p>
+                        </div>
+                        <div id="avaComenario">
+                            <ul class="checklist">
+                                <li class="checked"></li>
+                                <li class="checked"></li>
+                                <li class="checked"></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+
+                            <p id="cometario">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="fotoComentario">
+                        <div id="usuario">
+                            <figure id="figPerfil">
+                                <img src="./img/download.jpg" alt="foto de perfil" id="perfil">
+                            </figure>
+                            <p id="nomeDeUsuario">Nome de Usuario</p>
+                        </div>
+                        <div id="avaComenario">
+                            <ul class="checklist">
+                                <li class="checked"></li>
+                                <li class="checked"></li>
+                                <li class="checked"></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+
+                            <p id="cometario">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/scriptcarrinho.js"></script>
+
+    </main>
+
+    
+    <footer><!--Rodaper-->
+        
+        <div id="containeRodape">
+           <div id="rodape">
+               <div class="conteudoRodape">
+                 <p class="titulo"> Endereço: </p>
+                 <p> Igreja Batista Lagoinha - Bom Jesus da Lapa</p>
+                 <p> CNPJ: 49.998.717/0001-63 </p>
+                 <p> Rodovia BA 430 - Shangrilá </p>
+                </div>
+              <div class="conteudoRodape"> 
+                 <p class="titulo"> Acesse as nossas redes sociais: </p>
+                 <a class="redesocial" href="https://www.instagram.com/lagoinha.lapa/"> Instagram: lagoinha.lapa </a>
+                 <p><a class="redesocial" href="https://www.instagram.com/lagoinhastore.lapa/"> Instagram: lagoinhastore.lapa</a></p>
+                 <p> Contato: (77) 98851-7707</p>
+               </div> 
+               <div class="conteudoRodape"> 
+                 <p class="titulo"> Acesso Rápido: </p>
+                 <p> Acessibilidade </p>
+                 <button id="tema" onclick="mudarTema()">Tema</button>
+               </div> 
+               
+            </div>
+        </div>
+           
+    </footer>
+
+    <script src="./js/scriptproduto.js"></script>
+
+
+
+
+
+</body>
+
+</html>

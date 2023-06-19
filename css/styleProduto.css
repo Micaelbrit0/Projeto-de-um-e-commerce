@@ -130,8 +130,8 @@ main{
     
 }
 #fotoProdPrincipla{
-    width: 25vw;
-    height:300px;
+    width: 30vw;
+    height:50vh;
     margin: 20px 0 10px 20px;
 
 }
@@ -190,6 +190,7 @@ color: red; /* cor do coração marcado */
 
 #texNomeProd{
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 h1, h2{
@@ -228,6 +229,7 @@ ul{
     align-items: center;
     justify-content: center;
     height: 45px;
+    width: 35vw;
     background-color: #D9D9D9;
     border-radius: 14px;
     margin: 20px;

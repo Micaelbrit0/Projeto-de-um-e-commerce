@@ -72,7 +72,7 @@
                     <img style="width: 100px;height: 100px;" src="" alt="Foto do podruto">
                 </div>
                 
-                <p class="nome_produto">Nome do produto</p><p class="nome_produto2">Descrição</p>
+                <p id="nome_produto">Nome do produto</p><p id="nome_produto2">Descrição</p>
                 
                 <div id="buttonsQuant"><!-- div com a função de escolher a quantidade-->
 
@@ -108,7 +108,7 @@
                     </div>
             </section>           
         </div>
-        <script src="js/scriptcarrinho.js"></script>
+        
     </main>
 
     <footer><!--Rodaper-->
@@ -134,14 +134,14 @@
                <div class="conteudo"> <!--div com outras informações--> 
                     <p class="titulo"> Acesso Rápido: </p>
                     <p> Acessibilidade </p>
-                    <p> Temas </p>
-               </div> 
+                    <button id="tema" onclick="mudarTema()">Tema</button>               
+                </div> 
                
             </div>
         </div>
-           
+        
        </footer>
-   
+    <script src="js/scriptcarrinho.js"></script>
    </body>
    
    </html>  

@@ -128,6 +128,8 @@ function mudarTema(){
       botao[i].style.backgroundColor = "black";
   }
 
+  
+
 }
 
 

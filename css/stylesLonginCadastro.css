@@ -1,30 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
+
 }
- /* imagem do menu */  
-img{
+
+/* imagem do menu */
+img {
     width: 150px;
 }
 
-#menu{
-    height: auto;
+#menu {
     background-color: #252525;
     top: 0px;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
     flex-wrap: wrap;
-    
+
 }
-   
-body{
+
+body {
     background-color: rgba(236, 228, 228, 1);
 
 }
 
-/*Main da pagina Longin*/
-main{
+/*Main da pagina Login*/
+main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -32,96 +33,123 @@ main{
     justify-content: center;
     min-height: calc(100vh - 200px);
 }
+
 /*Mein e container da pagina Cadastro*/
-#meincadastro{
+#meincadastro {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    flex-wrap: wrap;
     flex-direction: column;
     min-height: calc(100vh - 200px);
+
 }
 
-#containerLogin{
-    height: auto;
-   
-}
-
-#containerCadastro{
-    height: auto;
-}
-
-
-/*DIV onde fica o formulario com do cadastro*/
-#formCadastro{
-    margin-top: 40px;
-    margin-bottom: 100px;
+/*DIV onde fica o formulario do cadastro*/
+#Cadastro {
+    margin-top: 10vh;
+    margin-bottom: 5vw;
     background: #FFFFFF;
-    border-radius: 41px;    
-    Width:400px;
-    Height:auto;
-    padding: 50px;
+    padding: 60px;
+    flex-wrap: wrap;
+  
 
-    
 }
 
 /*Muda os inputs da um espaço entre eles*/
-input{
-    margin-top: 20px ;
+input {
+    margin-top: 2vh;
     border-radius: 8px;
-    display: flex; 
-    height: 30px;
+    display: flex;
+    height: 5vh;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 2px;
+    flex-wrap: wrap;
+    
 
 }
+
 /*define que o formulario sera em direção de coluna*/
-form{
+form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 50%; 
 
 }
+
 /*muda o botão de Cadastar*/
-form [type="submit"]{
+#entar {
     display: block;
-    height: 50px;
+    height: 7vh;
     background: #252525;
-    box-shadow: 0px 4px 4px rgba(0,0, 0, 0.25);
-    border-radius: 23px;
     font-size: 20px;
     color: white;
     font-weight: bolder;
     cursor: pointer;
+    border: none;
+    flex-wrap: wrap ;
+    
 }
+
+hr {
+
+    margin-top: 3vh;
+
+}
+
+label {
+    flex-wrap: wrap;
+    margin-top: 7px;
+    font-size: 17px;
+}
+
 
 /*Faz os 2 fomularios ocuparem 1 so linha*/
-#generoCPF{
-    display: flex;
-    justify-content: space-between;
+#nomelogin, #nomeendereco {
+    margin-top: 2vh;
 }
 
-#genero{
+#generoCPF {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+#genero, #divCpf {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 7px;
-   
-}
-/*muda os p*/
-#nomeTex, #nomeTexDate{
-    font-size: 15px;
-    text-align: left;
+
 }
 
-#nomeTexDate{
-    padding-top: 10px;
-    margin-bottom: -20px;
+#divCpf input{
+    height: 3vh;
+    margin-top: 5px;
 }
+
+
+
+/*muda os p*/
+#nomeTex,
+#nomeTexDate {
+
+    font-size: 17px;
+    text-align: left;
+    margin-block-end: 1vh;
+}
+
+#nomeTexDate {
+    padding-top: 10px;
+    margin-bottom: 3px;
+
+}
+
 /*Muda a caixa do genero*/
-#opcoes{
+#opcoes {
     border-color: #ccc;
     border-radius: 5px;
     cursor: pointer;
@@ -129,23 +157,41 @@ form [type="submit"]{
     height: 30px;
 }
 
-#bairroN{
+#bairroN {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
+
+#num{
+    margin-left: 20px;
+}
+
+
+
 
 /*muda a fonte do texto*/
 
-h1{
+h1 {
     font-size: 40px;
+
 }
 
-p{
-   
-    color: black;
-   
+h2 {
+    font-size: 20px;
 }
-a{
+
+p {
+
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+a {
     color: #FD9E0F;
     text-decoration: none;
     margin-left: 10px;
@@ -155,42 +201,34 @@ a{
 
 /*Onde ta o formulario de login*/
 
-#ladoEsq{
-    display: flex;
-    align-items: end;
-    border: 1px solid white;
-    align-items: end;
-   
-}
 
-#LoginEntra{
+#LoginEntra {
     background: #FFFFFF;
-    border-radius: 41px;    
-    Width:300px;
-    Height:350px;
-    padding:50px;
-    top:20px;
+    Width: 20vw;
+    Height: 50vh;
+    padding: 50px;
+    top: 20px;
     flex-direction: column;
     margin: 40px 0;
     flex-wrap: wrap;
     display: flex;
-    
+
 }
 
-#email, #senha{
-    height: 50px;
+#texCadastro{
+    margin: 20px;
+    flex-wrap: wrap;
 }
-
-
 
 
 /* CSS DO RODAPE */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(36, 36, 36);
-    height: 100px;
+    height: 20vh;
+    width: 100%;
     text-align: center;
     color: white;
 }
@@ -198,38 +236,50 @@ footer{
 #containeRodape {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-#rodape{
-  display: flex;
-  justify-content: space-between;
-  width:100%;                                                                                                            
-  font-size: 13px;
 }
 
-.conteudoRodape{
-  width: 250px;
-  
+#rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
 }
-.conteudoRodape p{
+
+.conteudoRodape {
+    width: 250px;
+
+}
+
+.conteudoRodape p {
     font-size: 13px;
     color: white;
 }
-.titulo p{
+
+.titulo p {
     font-size: 13px;
 }
 
-  
-.titulo{
-    color:rgba(182, 182, 182, 0.815); 
+
+.titulo {
+    color: rgba(182, 182, 182, 0.815);
     text-decoration: none;
     font-size: 13px;
 }
 
-.redesocial{
-    color: white; 
+.redesocial {
+    color: white;
     text-decoration: none;
 
 }
 
+#tema {
+    background-color: #252525;
+    border: none;
+    color: white;
+    margin: 5px;
+}
 
+#tema:hover {
+    cursor: pointer;
+
+}

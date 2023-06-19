@@ -140,7 +140,7 @@ main{
 .nome_produto{
     margin-top: 15px;
 }
-.nome_produto2{
+#nome_produto2{
     margin-top: 40px;
     margin-left: -85px;
 }
@@ -279,4 +279,14 @@ footer{
 .redesocial{
     color: white; 
     text-decoration: none; 
+}
+#tema{
+    background-color: #252525;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+
+#tema:hover {
+    cursor: pointer;
 }

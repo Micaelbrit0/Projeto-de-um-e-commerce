@@ -1,5 +1,3 @@
-
-/*Aqui inicia o css do header*/
 *{  
     margin: 0px;
     padding: 0px;
@@ -9,8 +7,6 @@ header{
     display: flex;
     background-color: #252525;
     flex-direction: row;
-    width: auto;
-    height: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;  
 }
@@ -31,9 +27,12 @@ a{
 }
 
 #buscador{
-    height: 30px;
-    width: 500px;
+    height: 2vh;
+    width: 27vw;
     padding: 15px;
+    max-width: 650px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 #button{
@@ -44,21 +43,19 @@ a{
     border: none;
     border-radius: 0px  4px 4px 0px ;
     cursor: pointer;
+    color: black; 
 }
 #bus_but{/*div principal do buscador*/
     display: flex;
     justify-content: center;
     
 }
-#buscador {
-    max-width: 650px;
-    font-size: 16px;
-    margin-top: 20px;
-}
 
 /*Essa div contem o buscador e a figura do carrinho para ficar ao lado*/
 #butonCarrinho{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #carrinho{
@@ -90,6 +87,7 @@ nav ul {
 
 /*Aqui termina o css do header*/
 
+
 .usuario {
     justify-content: center;
     align-items: center;
@@ -98,7 +96,7 @@ nav ul {
     /*espaçamento entre linhas*/
     font-size: 25px;
     margin-top: 50px;
-    width: 40vh;
+    width: 45vh;
 
 }
 

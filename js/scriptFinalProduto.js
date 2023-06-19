@@ -39,7 +39,7 @@ select.addEventListener('change', function() {
 
 function mudarTema(){
 
-    let janelaModal = document.querySelectorAll(".modal")
+    let janelaModal = document.querySelectorAll("#modal")
     for (var i = 0; i <  janelaModal.length; i++) {
       janelaModal[i].style.backgroundColor = "black"
     }
